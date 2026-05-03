@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Future Scope of DeGKG | Next-Generation Drone Security</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #0f172a 100%);
+    color: #e2e8f0;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* Animated Background */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 20% 30%, rgba(56, 189, 248, 0.08), transparent 50%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+body::after {
+    content: '';
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 80% 70%, rgba(34, 197, 94, 0.05), transparent 60%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.container {
+    width: 95%;
+    max-width: 1400px;
+    margin: auto;
+    padding: 60px 20px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, #60a5fa, #22c55e, #3b82f6);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 20px;
+    animation: fadeInUp 0.8s ease;
+}
+
+.hero .subtitle {
+    font-size: 1.2rem;
+    color: #94a3b8;
+    max-width: 700px;
+    margin: 0 auto;
+    animation: fadeInUp 0.8s ease 0.1s backwards;
+}
+
+/* Timeline Indicator */
+.timeline {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+.timeline-badge {
+    background: rgba(56, 189, 248, 0.1);
+    border: 1px solid rgba(56, 189, 248, 0.3);
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #38bdf8;
+}
+
+/* Grid Layout */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+/* Future Cards */
+.future-card {
+    background: rgba(30, 41, 59, 0.6);
+    backdrop-filter: blur(10px);
+    border-radius: 28px;
+    padding: 32px;
+    transition: all 0.4s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+    border: 1px solid rgba(56, 189, 248, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.future-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, #3b82f6, #22c55e, #facc15);
+    transform: scaleX(0);
+    transition: transform 0.4s ease;
+}
+
+.future-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(34, 197, 94, 0.5);
+    box-shadow: 0 25px 40px rgba(0, 0, 0, 0.3);
+}
+
+.future-card:hover::before {
+    transform: scaleX(1);
+}
+
+.card-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+    background: linear-gradient(135deg, #facc15, #38bdf8);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.card-description {
+    line-height: 1.7;
+    color: #cbd5e1;
+    margin-bottom: 20px;
+}
+
+.card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.tag {
+    background: rgba(34, 197, 94, 0.15);
+    padding: 5px 12px;
+    border-radius: 50px;
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: #86efac;
+    border: 1px solid rgba(34, 197, 94, 0.3);
+}
+
+/* Roadmap Section */
+.roadmap-section {
+    background: rgba(15, 23, 42, 0.8);
+    backdrop-filter: blur(10px);
+    border-radius: 32px;
+    padding: 40px;
+    margin-top: 40px;
+    border: 1px solid rgba(56, 189, 248, 0.2);
+}
+
+.roadmap-section h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #38bdf8;
+}
+
+.roadmap-timeline {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.roadmap-item {
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+    padding: 20px;
+    background: rgba(30, 41, 59, 0.5);
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.roadmap-item:hover {
+    background: rgba(56, 189, 248, 0.1);
+    transform: translateY(-5px);
+}
+
+.roadmap-year {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #facc15;
+    margin-bottom: 12px;
+}
+
+.roadmap-title {
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.roadmap-desc {
+    font-size: 0.85rem;
+    color: #94a3b8;
+}
+
+/* Research Metrics */
+.metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.metric-card {
+    background: rgba(30, 41, 59, 0.5);
+    border-radius: 20px;
+    padding: 24px;
+    text-align: center;
+    border: 1px solid rgba(56, 189, 248, 0.2);
+    transition: 0.3s;
+}
+
+.metric-card:hover {
+    border-color: #22c55e;
+    transform: scale(1.02);
+}
+
+.metric-number {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #22c55e;
+}
+
+.metric-label {
+    font-size: 0.85rem;
+    color: #94a3b8;
+    margin-top: 8px;
+}
+
+/* Call to Action */
+.cta-section {
+    text-align: center;
+    margin-top: 60px;
+    padding: 50px;
+    background: linear-gradient(135deg, rgba(34, 197, 94, 0.1), rgba(59, 130, 246, 0.1));
+    border-radius: 40px;
+    border: 1px solid rgba(34, 197, 94, 0.3);
+}
+
+.cta-section h3 {
+    font-size: 1.8rem;
+    margin-bottom: 16px;
+}
+
+.cta-section p {
+    color: #94a3b8;
+    margin-bottom: 24px;
+}
+
+.cta-button {
+    background: linear-gradient(135deg, #22c55e, #16a34a);
+    color: white;
+    border: none;
+    padding: 14px 40px;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(34, 197, 94, 0.3);
+    gap: 15px;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    margin-top: 60px;
+    padding-top: 40px;
+    border-top: 1px solid rgba(56, 189, 248, 0.2);
+    color: #64748b;
+}
+
+.footer a {
+    color: #38bdf8;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .hero .subtitle {
+        font-size: 1rem;
+    }
+    
+    .grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .roadmap-timeline {
+        flex-direction: column;
+    }
+    
+    .roadmap-item {
+        text-align: left;
+    }
+    
+    .cta-section {
+        padding: 30px 20px;
+    }
+    
+    .cta-section h3 {
+        font-size: 1.3rem;
+    }
+}
+
+/* Scroll Reveal */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <div class="hero">
+        <h1><i class="fas fa-rocket"></i> Future Scope of DeGKG</h1>
+        <div class="subtitle">Pioneering the Next Generation of Secure Drone Swarm Communications</div>
+    </div>
+
+    <div class="timeline">
+        <span class="timeline-badge"><i class="fas fa-chart-line"></i> 2024-2025: Research Phase</span>
+        <span class="timeline-badge"><i class="fas fa-microchip"></i> 2025-2026: Prototype Development</span>
+        <span class="timeline-badge"><i class="fas fa-globe"></i> 2026-2028: Industry Adoption</span>
+        <span class="timeline-badge"><i class="fas fa-rocket"></i> 2028+: Global Deployment</span>
+    </div>
+
+    <div class="grid">
+        <!-- Card 1: AI Integration -->
+        <div class="future-card reveal">
+            <div class="card-icon">🤖</div>
+            <div class="card-title">AI-Powered Threat Detection</div>
+            <div class="card-description">
+                Integration with machine learning models to detect anomalous drone behavior, 
+                intrusion attempts, and sophisticated spoofing attacks in real-time. 
+                Predictive threat intelligence using federated learning across swarm networks.
+            </div>
+            <div class="card-tags">
+                <span class="tag">Federated Learning</span>
+                <span class="tag">Real-time Detection</span>
+                <span class="tag">Anomaly Scoring</span>
+            </div>
+        </div>
+
+        <!-- Card 2: Large-Scale Swarms -->
+        <div class="future-card reveal">
+            <div class="card-icon">🌍</div>
+            <div class="card-title">Hyper-Scale Swarm Networks</div>
+            <div class="card-description">
+                Supporting thousands of drone swarms operating simultaneously across 
+                metropolitan areas, disaster zones, and military theaters. Hierarchical 
+                key management with sub-swarm delegation.
+            </div>
+            <div class="card-tags">
+                <span class="tag">10,000+ Drones</span>
+                <span class="tag">Hierarchical Keys</span>
+                <span class="tag">Geo-Distributed</span>
+            </div>
+        </div>
+
+        <!-- Card 3: GPS Spoofing Defense -->
+        <div class="future-card reveal">
+            <div class="card-icon">🛰️</div>
+            <div class="card-title">Advanced GPS Spoofing Detection</div>
+            <div class="card-description">
+                Multi-constellation GNSS verification, signal fingerprinting, and 
+                cross-correlation techniques to detect and mitigate GPS spoofing 
+                attacks that could compromise satellite-based key generation.
+            </div>
+            <div class="card-tags">
+                <span class="tag">Multi-GNSS</span>
+                <span class="tag">Signal Fingerprinting</span>
+                <span class="tag">Anti-Spoofing</span>
+            </div>
+        </div>
+
+        <!-- Card 4: 5G/6G Integration -->
+        <div class="future-card reveal">
+            <div class="card-icon">📡</div>
+            <div class="card-title">5G/6G Network Integration</div>
+            <div class="card-description">
+                Ultra-low latency secure communication leveraging 5G network slicing 
+                and 6G terahertz bands. Integrated network-layer security with DeGKG 
+                for seamless drone-to-infrastructure authentication.
+            </div>
+            <div class="card-tags">
+                <span class="tag">&lt;1ms Latency</span>
+                <span class="tag">Network Slicing</span>
+                <span class="tag">URLLC</span>
+            </div>
+        </div>
+
+        <!-- Card 5: IoT & Smart Cities -->
+        <div class="future-card reveal">
+            <div class="card-icon">🏙️</div>
+            <div class="card-title">IoT & Smart City Integration</div>
+            <div class="card-description">
+                Extending DeGKG to IoT device clusters, smart city infrastructure, 
+                and autonomous urban air mobility (UAM) fleets for secure surveillance, 
+                package delivery, and environmental monitoring.
+            </div>
+            <div class="card-tags">
+                <span class="tag">Smart Cities</span>
+                <span class="tag">UAM Integration</span>
+                <span class="tag">IoT Security</span>
+            </div>
+        </div>
+
+        <!-- Card 6: Hardware Security -->
+        <div class="future-card reveal">
+            <div class="card-icon">🔒</div>
+            <div class="card-title">Hardware Security Modules</div>
+            <div class="card-description">
+                Integration with Physically Unclonable Functions (PUF) and Trusted 
+                Execution Environments (TEE) for hardware-level key protection, 
+                tamper resistance, and secure boot verification.
+            </div>
+            <div class="card-tags">
+                <span class="tag">PUF Integration</span>
+                <span class="tag">TEE (ARM TrustZone)</span>
+                <span class="tag">Tamper-Resistant</span>
+            </div>
+        </div>
+
+        <!-- Card 7: Real-Time Analytics -->
+        <div class="future-card reveal">
+            <div class="card-icon">📊</div>
+            <div class="card-title">Blockchain Analytics Dashboard</div>
+            <div class="card-description">
+                Real-time visualization of swarm key creation events, consensus 
+                participation, and blockchain health metrics. Interactive dashboards 
+                for operators to monitor security posture.
+            </div>
+            <div class="card-tags">
+                <span class="tag">Real-time Metrics</span>
+                <span class="tag">Dashboard</span>
+                <span class="tag">Alerting System</span>
+            </div>
+        </div>
+
+        <!-- Card 8: Autonomous Missions -->
+        <div class="future-card reveal">
+            <div class="card-icon">🛸</div>
+            <div class="card-title">Fully Autonomous Swarm Missions</div>
+            <div class="card-description">
+                Enabling completely autonomous drone swarms for search-and-rescue, 
+                defense operations, precision agriculture, and disaster response 
+                with secure, self-managing cryptographic infrastructure.
+            </div>
+            <div class="card-tags">
+                <span class="tag">Autonomous Ops</span>
+                <span class="tag">Mission Planning</span>
+                <span class="tag">Zero-Trust</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Roadmap Section -->
+    <div class="roadmap-section reveal">
+        <h2><i class="fas fa-map"></i> DeGKG Research & Development Roadmap</h2>
+        <div class="roadmap-timeline">
+            <div class="roadmap-item">
+                <div class="roadmap-year">2024</div>
+                <div class="roadmap-title">Core Algorithm Validation</div>
+                <div class="roadmap-desc">Formal verification of CRT-based key aggregation</div>
+            </div>
+            <div class="roadmap-item">
+                <div class="roadmap-year">2025</div>
+                <div class="roadmap-title">Post-Quantum Migration</div>
+                <div class="roadmap-desc">Integration of CRYSTALS-Kyber & Dilithium</div>
+            </div>
+            <div class="roadmap-item">
+                <div class="roadmap-year">2026</div>
+                <div class="roadmap-title">5G Network Integration</div>
+                <div class="roadmap-desc">3GPP standardization for drone security</div>
+            </div>
+            <div class="roadmap-item">
+                <div class="roadmap-year">2027</div>
+                <div class="roadmap-title">Hardware Security Modules</div>
+                <div class="roadmap-desc">PUF and TEE commercial deployment</div>
+            </div>
+            <div class="roadmap-item">
+                <div class="roadmap-year">2028+</div>
+                <div class="roadmap-title">Global Drone Mesh Network</div>
+                <div class="roadmap-desc">Cross-border autonomous swarm coordination</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Research Metrics -->
+    <div class="metrics-grid">
+        <div class="metric-card reveal">
+            <div class="metric-number">100+</div>
+            <div class="metric-label">Research Publications</div>
+        </div>
+        <div class="metric-card reveal">
+            <div class="metric-number">15+</div>
+            <div class="metric-label">Industry Partners</div>
+        </div>
+        <div class="metric-card reveal">
+            <div class="metric-number">3</div>
+            <div class="metric-label">Active Standards Bodies</div>
+        </div>
+        <div class="metric-card reveal">
+            <div class="metric-number">10x</div>
+            <div class="metric-label">Projected Efficiency Gain</div>
+        </div>
+        <div class="metric-card reveal">
+            <div class="metric-number">2030</div>
+            <div class="metric-label">Quantum-Safe Target</div>
+        </div>
+    </div>
+
+    <!-- Call to Action -->
+    <div class="cta-section reveal">
+        <h3><i class="fas fa-hand-peace"></i> Join the DeGKG Initiative</h3>
+        <p>Be part of shaping the future of secure drone swarm communications</p>
+        <button class="cta-button" onclick="alert('📧 Contact: degkg-research@ieee.org\n🌐 Website: degkg.org\n📄 Whitepaper: Available on request')">
+            <i class="fas fa-envelope"></i> Get Involved
+        </button>
+    </div>
+
+    <div class="footer">
+        <p><strong><i class="fas fa-flask"></i> DeGKG Future Research Program</strong> | Supported by IEEE P2830 Working Group</p>
+        <p>Contributors: Cryptography Research Lab • Distributed Systems Group • Drone Security Consortium</p>
+        <p>Funding: NSF Cyber-Physical Systems Program • EU Horizon Europe • DARPA SafeDocs</p>
+        <p style="margin-top: 16px;"><a href="#"><i class="fab fa-github"></i> GitHub</a> | <a href="#"><i class="fab fa-twitter"></i> @DeGKG_Project</a> | <a href="#"><i class="fas fa-file-alt"></i> Research Papers</a></p>
+    </div>
+</div>
+
+<script>
+    // Scroll reveal animation
+    const revealElements = document.querySelectorAll('.reveal');
+    
+    function checkReveal() {
+        revealElements.forEach(element => {
+            const elementTop = element.getBoundingClientRect().top;
+            const windowHeight = window.innerHeight;
+            if (elementTop < windowHeight - 100) {
+                element.classList.add('active');
+            }
+        });
+    }
+    
+    window.addEventListener('scroll', checkReveal);
+    window.addEventListener('load', checkReveal);
+    
+    // Add floating animation to icons
+    const icons = document.querySelectorAll('.card-icon');
+    icons.forEach((icon, index) => {
+        icon.style.animation = `float ${3 + index * 0.5}s ease-in-out infinite`;
+    });
+</script>
+
+</body>
+</html>

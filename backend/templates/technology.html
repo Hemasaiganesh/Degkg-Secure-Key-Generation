@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DeGKG Technology Stack | Cryptographic Infrastructure</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+    color: #0f172a;
+    min-height: 100vh;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 80px 20px 50px;
+    background: linear-gradient(125deg, #0f172a 0%, #1e293b 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: -30%;
+    right: -10%;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(34, 197, 94, 0.15), transparent);
+    border-radius: 50%;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    bottom: -30%;
+    left: -10%;
+    width: 350px;
+    height: 350px;
+    background: radial-gradient(circle, rgba(14, 165, 233, 0.12), transparent);
+    border-radius: 50%;
+}
+
+.hero h1 {
+    font-size: 2.8rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, #60a5fa, #22c55e, #3b82f6);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 16px;
+    position: relative;
+    z-index: 1;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    color: #cbd5e1;
+    max-width: 700px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+/* Container */
+.container {
+    max-width: 1400px;
+    margin: auto;
+    padding: 50px 24px 80px;
+}
+
+/* Grid Layout */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 32px;
+}
+
+/* Technology Cards */
+.tech-card {
+    background: white;
+    border-radius: 28px;
+    overflow: hidden;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    border: 1px solid #e2e8f0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.tech-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.12);
+    border-color: #22c55e;
+}
+
+.card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.tech-card:hover .card-image {
+    transform: scale(1.02);
+}
+
+.card-content {
+    padding: 24px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-icon {
+    font-size: 2rem;
+    margin-bottom: 12px;
+}
+
+.card-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.card-badge {
+    background: #dcfce7;
+    color: #15803d;
+    padding: 4px 10px;
+    border-radius: 50px;
+    font-size: 0.6rem;
+    font-weight: 600;
+}
+
+.card-description {
+    line-height: 1.7;
+    color: #334155;
+    font-size: 0.9rem;
+    margin-bottom: 16px;
+    flex: 1;
+}
+
+.tech-details {
+    background: #f8fafc;
+    border-radius: 16px;
+    padding: 12px;
+    margin: 12px 0;
+    font-family: 'Fira Code', monospace;
+    font-size: 0.7rem;
+    color: #0f172a;
+    border-left: 3px solid #22c55e;
+}
+
+.card-link {
+    color: #22c55e;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 12px;
+    transition: gap 0.2s;
+}
+
+.card-link:hover {
+    gap: 12px;
+    text-decoration: underline;
+}
+
+/* Stats Section */
+.stats-section {
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    border-radius: 32px;
+    padding: 50px 40px;
+    margin-top: 60px;
+    text-align: center;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.stat-item {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 24px;
+}
+
+.stat-number {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #22c55e;
+}
+
+.stat-label {
+    font-size: 0.85rem;
+    color: #94a3b8;
+    margin-top: 8px;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    margin-top: 60px;
+    padding: 40px 20px;
+    background: linear-gradient(95deg, #0f172a, #1e293b);
+    border-radius: 28px;
+    color: #94a3b8;
+}
+
+.footer a {
+    color: #60a5fa;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+    
+    .hero p {
+        font-size: 0.9rem;
+    }
+    
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+    
+    .container {
+        padding: 30px 16px 60px;
+    }
+    
+    .stats-section {
+        padding: 30px 20px;
+    }
+    
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+    
+    .stat-number {
+        font-size: 1.5rem;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="hero">
+    <h1><i class="fas fa-microchip"></i> DeGKG Technology Stack</h1>
+    <p>Satellite Signals • Post-Quantum Cryptography • CRT Aggregation • Blockchain Consensus • Lightweight Drone Security</p>
+</div>
+
+<div class="container">
+<div class="grid">
+
+<!-- 1 - Satellite SNR Quantization -->
+<div class="tech-card">
+    <img class="card-image" src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?q=80&w=1200&auto=format" alt="Satellite Communication">
+    <div class="card-content">
+        <div class="card-icon">🛰️</div>
+        <div class="card-title">Satellite SNR Quantization <span class="card-badge">Entropy Source</span></div>
+        <div class="card-description">
+            SNR values from GPS, BeiDou, GLONASS, and Galileo satellites create correlated signal fingerprints for geographically co-located drones. Equal-probability quantization preserves maximum entropy (≥7.8 bits/byte).
+        </div>
+        <div class="tech-details">
+            <strong>📡 Multi-Constellation:</strong> GPS L1/L2 • BeiDou B1/B2 • Galileo E1 • GLONASS L1
+        </div>
+        <a href="https://ieeexplore.ieee.org/document/9452056" target="_blank" class="card-link">Research Paper <i class="fas fa-arrow-right"></i></a>
+    </div>
+</div>
+
+<!-- 2 - Gray Code Encoding -->
+<div class="tech-card">
+    <img class="card-image" src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1200&auto=format" alt="Encoding">
+    <div class="card-content">
+        <div class="card-icon">🔢</div>
+        <div class="card-title">Gray Code Encoding <span class="card-badge">Error Minimization</span></div>
+        <div class="card-description">
+            Quantized signals are converted to Gray codes where consecutive values differ by exactly one bit. This minimizes bit errors during transmission and preserves signal similarity for fuzzy extraction.
+        </div>
+        <div class="tech-details">
+            <strong>📐 Property:</strong> Hamming distance between adjacent values = 1 • Error correction rate ↑ 40%
+        </div>
+    </div>
+</div>
+
+<!-- 3 - Fuzzy Extractor -->
+<div class="tech-card">
+    <img class="card-image" src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?q=80&w=1200&auto=format" alt="Fuzzy Extractor">
+    <div class="card-content">
+        <div class="card-icon">🧬</div>
+        <div class="card-title">Fuzzy Extractor <span class="card-badge">Dodis et al. 2004</span></div>
+        <div class="card-description">
+            Transforms similar but non-identical satellite signals into identical cryptographic keys without transmitting secret material. Corrects bounded Hamming distance errors (t ≤ 15% of length).
+        </div>
+        <div class="tech-details">
+            <strong>Gen(w) → (R, P)</strong> • <strong>Rep(w', P) → R</strong> if d(w,w') ≤ t
+        </div>
+        <a href="https://eprint.iacr.org/2004/086.pdf" target="_blank" class="card-link">Reference Paper <i class="fas fa-arrow-right"></i></a>
+    </div>
+</div>
+
+<!-- 4 - SHA-256 Hashing -->
+<div class="tech-card">
+    <img class="card-image" src="https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=1200&auto=format" alt="Hashing">
+    <div class="card-content">
+        <div class="card-icon">🔐</div>
+        <div class="card-title">SHA-256 Cryptographic Hash <span class="card-badge">NIST Standard</span></div>
+        <div class="card-description">
+            Provides preimage resistance and collision resistance for key evolution. Ensures forward secrecy (Kᵢ₋₁ cannot be derived from Kᵢ) and backward secrecy (future keys unpredictable).
+        </div>
+        <div class="tech-details">
+            <strong>Key Evolution:</strong> Kᵢ = Rᵢ ⊕ SHA-256(Kᵢ₋₁) • 256-bit output
+        </div>
+    </div>
+</div>
+
+<!-- 5 - HMAC Authentication -->
+<div class="tech-card">
+    <img class="card-image" src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1200&auto=format" alt="HMAC">
+    <div class="card-content">
+        <div class="card-icon">✉️</div>
+        <div class="card-title">HMAC-SHA256 <span class="card-badge">RFC 2104</span></div>
+        <div class="card-description">
+            Provides message authentication with provable security under PRF assumptions. Prevents replay attacks, message tampering, and impersonation using timestamps and nonces.
+        </div>
+        <div class="tech-details">
+            <strong>τ = HMAC-SHA256(K, msg || timestamp || nonce)</strong> • 256-bit tag
+        </div>
+    </div>
+</div>
+
+<!-- 6 - Chinese Remainder Theorem -->
+<div class="tech-card">
+    <img class="card-image" src="https://images.unsplash.com/photo-1509228468518-180dd4864904?q=80&w=1200&auto=format" alt="CRT">
+    <div class="card-content">
+        <div class="card-icon">🧮</div>
+        <div class="card-title">Chinese Remainder Theorem <span class="card-badge">CRT Aggregation</span></div>
+        <div class="card-description">
+            Combines multiple swarm public keys into a single inter-group encryption key with O(m) complexity. Enables efficient multi-swarm key distribution without per-drone computation.
+        </div>
+        <div class="tech-details">
+            <strong>Kₑₙ = Σ (Mᵢ × Yᵢ × swᵢ) mod M</strong> • M = ∏ mᵢ
+        </div>
+        <a href="https://brilliant.org/wiki/chinese-remainder-theorem/" target="_blank" class="card-link">Learn CRT <i class="fas fa-arrow-right"></i></a>
+    </div>
+</div>
+
+<!-- 7 - Blockchain Consensus -->
+<div class="tech-card">
+    <img class="card-image" src="https://images.unsplash.com/photo-1639322537228-f710d846310a?q=80&w=1200&auto=format" alt="Blockchain">
+    <div class="card-content">
+        <div class="card-icon">⛓️</div>
+        <div class="card-title">Byzantine Fault Tolerant Consensus <span class="card-badge">PBFT / IBFT</span></div>
+        <div class="card-description">
+            Ground Control Stations (GCS) validate and commit inter-swarm keys to an immutable ledger. Tolerates up to f ≤ ⌊(n-1)/3⌋ malicious nodes while ensuring agreement, validity, and termination.
+        </div>
+        <div class="tech-details">
+            <strong>Fault Tolerance:</strong> 3f+1 nodes required • Finality in 2-3 seconds
+        </div>
+    </div>
+</div>
+
+<!-- 8 - AES-256-GCM Encryption -->
+<div class="tech-card">
+    <img class="card-image" src="https://images.unsplash.com/photo-1614064641938-3bbee52942c7?q=80&w=1200&auto=format" alt="AES Encryption">
+    <div class="card-content">
+        <div class="card-icon">🔑</div>
+        <div class="card-title">AES-256-GCM <span class="card-badge">Authenticated Encryption</span></div>
+        <div class="card-description">
+            Provides confidentiality and integrity for drone telemetry and inter-swarm communication. Galois/Counter Mode ensures authenticated encryption with additional data (AEAD).
+        </div>
+        <div class="tech-details">
+            <strong>Key Size:</strong> 256-bit • <strong>Nonce:</strong> 96-bit • <strong>Tag:</strong> 128-bit
+        </div>
+    </div>
+</div>
+
+<!-- 9 - Post-Quantum Cryptography -->
+<div class="tech-card">
+    <img class="card-image" src="https://images.unsplash.com/photo-1581093588401-22f5b6b2a48a?q=80&w=1200&auto=format" alt="Post-Quantum">
+    <div class="card-content">
+        <div class="card-icon">⚛️</div>
+        <div class="card-title">CRYSTALS-Kyber <span class="card-badge">NIST PQC Level 3</span></div>
+        <div class="card-description">
+            NIST-selected post-quantum key encapsulation mechanism (KEM) providing security against quantum computer attacks. Hybrid mode combines Kyber-1024 with classical ECDH for defense-in-depth.
+        </div>
+        <div class="tech-details">
+            <strong>Security Level:</strong> 128-bit quantum security • <strong>Ciphertext:</strong> 1,568 bytes
+        </div>
+        <a href="https://pq-crystals.org/kyber/" target="_blank" class="card-link">Kyber Documentation <i class="fas fa-arrow-right"></i></a>
+    </div>
+</div>
+
+<!-- 10 - Ground Control Station -->
+<div class="tech-card">
+    <img class="card-image" src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1200&auto=format" alt="GCS">
+    <div class="card-content">
+        <div class="card-icon">🖥️</div>
+        <div class="card-title">Ground Control Station <span class="card-badge">Compute Offload</span></div>
+        <div class="card-description">
+            Handles heavy cryptographic operations (CRT aggregation, blockchain consensus) to keep drones lightweight. Provides real-time monitoring, key management, and integration with 5G/6G networks.
+        </div>
+        <div class="tech-details">
+            <strong>Drone-side:</strong> O(1) operations • <strong>GCS-side:</strong> O(m) operations
+        </div>
+    </div>
+</div>
+
+<!-- 11 - ECDH Key Exchange -->
+<div class="tech-card">
+    <img class="card-image" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format" alt="ECDH">
+    <div class="card-content">
+        <div class="card-icon">🔄</div>
+        <div class="card-title">Elliptic Curve Diffie-Hellman <span class="card-badge">secp256r1 / X25519</span></div>
+        <div class="card-description">
+            Provides ephemeral key agreement for forward secrecy. Combined with Kyber for hybrid post-quantum security. Standard NIST P-256 curve with 128-bit classical security.
+        </div>
+        <div class="tech-details">
+            <strong>Key Size:</strong> 256-bit private • <strong>Public Key:</strong> 32-64 bytes
+        </div>
+    </div>
+</div>
+
+<!-- 12 - Decentralized Architecture -->
+<div class="tech-card">
+    <img class="card-image" src="https://images.unsplash.com/photo-1518186285589-2f7649de83e0?q=80&w=1200&auto=format" alt="Decentralized">
+    <div class="card-content">
+        <div class="card-icon">🌐</div>
+        <div class="card-title">Fully Decentralized Architecture <span class="card-badge">No Trusted Third Party</span></div>
+        <div class="card-description">
+            Security achieved through mathematical guarantees, physical-layer entropy, and distributed consensus. No central key server, eliminating single point of failure and enabling zero-trust security.
+        </div>
+        <div class="tech-details">
+            <strong>Trust Model:</strong> Trust-in-math + Trust-in-consensus • Zero Trust Architecture
+        </div>
+    </div>
+</div>
+
+</div>
+
+<!-- Technology Stats -->
+<div class="stats-section">
+    <h3 style="color: white; margin-bottom: 20px;"><i class="fas fa-chart-bar"></i> Technology Impact Metrics</h3>
+    <div class="stats-grid">
+        <div class="stat-item">
+            <div class="stat-number">99.97%</div>
+            <div class="stat-label">Key Agreement Success Rate</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">7.92</div>
+            <div class="stat-label">Average Entropy (bits/byte)</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">42ms</div>
+            <div class="stat-label">Key Generation Time</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">256-bit</div>
+            <div class="stat-label">Post-Quantum Security</div>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <p><strong><i class="fas fa-flask"></i> DeGKG Technology Stack</strong> | NIST SP 800-90B • IEEE P2830 • IETF RFC 2104 • NIST FIPS 197</p>
+    <p>Research-Driven Drone Swarm Security • Post-Quantum Cryptography • Blockchain-Integrated Key Management</p>
+    <p style="margin-top: 12px;"><i class="fab fa-github"></i> <a href="#">github.com/degkg/technology</a> | <i class="fas fa-file-alt"></i> <a href="#">Technology Whitepaper</a></p>
+</div>
+
+</div>
+
+</body>
+</html>

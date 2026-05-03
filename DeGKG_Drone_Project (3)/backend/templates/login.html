@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DeGKG | Secure Login - Drone Swarm Command Center</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Animated Background */
+body::before {
+    content: '';
+    position: absolute;
+    top: -30%;
+    right: -20%;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(34, 197, 94, 0.15), transparent);
+    border-radius: 50%;
+    pointer-events: none;
+    animation: float 20s infinite;
+}
+
+body::after {
+    content: '';
+    position: absolute;
+    bottom: -20%;
+    left: -10%;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(14, 165, 233, 0.12), transparent);
+    border-radius: 50%;
+    pointer-events: none;
+    animation: float 15s infinite reverse;
+}
+
+@keyframes float {
+    0%, 100% { transform: translate(0, 0); }
+    50% { transform: translate(30px, 20px); }
+}
+
+/* ===== LAYOUT ===== */
+.auth-wrapper {
+    max-width: 1100px;
+    width: 100%;
+    min-height: 650px;
+    display: flex;
+    border-radius: 32px;
+    overflow: hidden;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(2px);
+    position: relative;
+    z-index: 1;
+    background: white;
+}
+
+/* ===== LEFT IMAGE SIDE ===== */
+.auth-image {
+    flex: 1.2;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    position: relative;
+    overflow: hidden;
+}
+
+.auth-image::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url('https://images.unsplash.com/photo-1473968512647-3e447244af8f?q=80&w=2000&auto=format') center/cover no-repeat;
+    opacity: 0.5;
+    z-index: 0;
+}
+
+.auth-image::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(125deg, rgba(15, 23, 42, 0.8), rgba(14, 165, 233, 0.3));
+    z-index: 1;
+}
+
+.image-text {
+    position: absolute;
+    bottom: 50px;
+    left: 40px;
+    right: 40px;
+    color: white;
+    z-index: 2;
+}
+
+.image-text h2 {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 12px;
+    background: linear-gradient(135deg, #ffffff, #86efac);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.image-text p {
+    font-size: 0.9rem;
+    opacity: 0.9;
+    line-height: 1.5;
+}
+
+.image-stats {
+    display: flex;
+    gap: 20px;
+    margin-top: 25px;
+    flex-wrap: wrap;
+}
+
+.image-stat {
+    text-align: left;
+}
+
+.image-stat .number {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #22c55e;
+}
+
+.image-stat .label {
+    font-size: 0.7rem;
+    opacity: 0.8;
+}
+
+/* ===== RIGHT FORM SIDE ===== */
+.auth-form {
+    flex: 1;
+    background: white;
+    padding: 50px 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* ===== HEADINGS ===== */
+.auth-form h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #0f172a;
+}
+
+.auth-form .subtitle {
+    font-size: 0.85rem;
+    color: #64748b;
+    margin-bottom: 32px;
+    border-left: 3px solid #22c55e;
+    padding-left: 12px;
+}
+
+/* ===== INPUTS ===== */
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #475569;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 14px 16px;
+    border-radius: 14px;
+    border: 1.5px solid #e2e8f0;
+    background: #f8fafc;
+    font-size: 0.9rem;
+    transition: all 0.2s;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: #22c55e;
+    background: white;
+    box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.1);
+}
+
+.input-group input.error {
+    border-color: #ef4444;
+    background: #fef2f2;
+}
+
+/* ===== SHOW PASSWORD ===== */
+.show-pass {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 12px 0 24px 0;
+    font-size: 0.85rem;
+}
+
+.show-pass input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    accent-color: #22c55e;
+}
+
+.show-pass label {
+    cursor: pointer;
+    user-select: none;
+    color: #475569;
+}
+
+/* ===== BUTTON ===== */
+.btn-login {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 14px;
+    background: linear-gradient(95deg, #22c55e, #16a34a);
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn-login:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(34, 197, 94, 0.3);
+    gap: 12px;
+}
+
+.btn-login:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* ===== LINKS ===== */
+.link-text {
+    margin-top: 24px;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #64748b;
+}
+
+.link-text a {
+    color: #22c55e;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s;
+}
+
+.link-text a:hover {
+    color: #16a34a;
+    text-decoration: underline;
+}
+
+/* ===== ALERT BOXES ===== */
+.alert-box {
+    padding: 14px 16px;
+    border-radius: 14px;
+    margin-bottom: 20px;
+    font-size: 0.85rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.alert-error {
+    background: linear-gradient(95deg, #fee2e2, #ffebeb);
+    color: #b91c1c;
+    border-left: 4px solid #ef4444;
+}
+
+.alert-success {
+    background: linear-gradient(95deg, #dcfce7, #e6f7e6);
+    color: #15803d;
+    border-left: 4px solid #22c55e;
+}
+
+.alert-box i {
+    font-size: 1.1rem;
+}
+
+/* ===== DEMO INFO ===== */
+.demo-info {
+    margin-top: 20px;
+    padding: 12px;
+    background: #f1f5f9;
+    border-radius: 12px;
+    font-size: 0.7rem;
+    color: #475569;
+    text-align: center;
+}
+
+.demo-info strong {
+    color: #22c55e;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .auth-wrapper {
+        flex-direction: column;
+        height: auto;
+        max-width: 450px;
+    }
+    
+    .auth-image {
+        height: 200px;
+        flex: none;
+    }
+    
+    .image-text {
+        bottom: 20px;
+        left: 20px;
+        right: 20px;
+    }
+    
+    .image-text h2 {
+        font-size: 1.3rem;
+    }
+    
+    .auth-form {
+        padding: 30px 25px;
+    }
+    
+    .image-stats {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .auth-form {
+        padding: 25px 20px;
+    }
+    
+    .auth-form h2 {
+        font-size: 1.4rem;
+    }
+}
+
+/* Loading Animation */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.fa-spinner {
+    animation: spin 1s linear infinite;
+}
+</style>
+</head>
+
+<body>
+
+<div class="auth-wrapper">
+
+    <!-- LEFT SIDE IMAGE WITH STATS -->
+    <div class="auth-image">
+        <div class="image-text">
+            <h2><i class="fas fa-drone"></i> DeGKG Secure Console</h2>
+            <p>Decentralized Key Generation for Drone Swarm Networks</p>
+            <div class="image-stats">
+                <div class="image-stat">
+                    <div class="number">256-bit</div>
+                    <div class="label">AES Encryption</div>
+                </div>
+                <div class="image-stat">
+                    <div class="number">Post-Quantum</div>
+                    <div class="label">Kyber-1024</div>
+                </div>
+                <div class="image-stat">
+                    <div class="number">99.99%</div>
+                    <div class="label">Key Success Rate</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- RIGHT SIDE FORM -->
+    <div class="auth-form">
+
+        <h2><i class="fas fa-shield-alt"></i> Welcome Back</h2>
+        <div class="subtitle">Access your secure drone swarm command center</div>
+
+        <!-- Error Message Display -->
+        {% if error %}
+        <div class="alert-box alert-error">
+            <i class="fas fa-exclamation-triangle"></i>
+            <span>{{ error }}</span>
+        </div>
+        {% endif %}
+
+        <!-- Success Message Display -->
+        {% if success %}
+        <div class="alert-box alert-success">
+            <i class="fas fa-check-circle"></i>
+            <span>{{ success }}</span>
+        </div>
+        {% endif %}
+
+        <form method="POST" action="/login" id="loginForm">
+            <div class="input-group">
+                <label><i class="fas fa-envelope"></i> Email Address</label>
+                <input type="email" name="email" id="email" placeholder="admin@degkg.com" required value="{{ request.form.email if request.form.email else '' }}">
+            </div>
+
+            <div class="input-group">
+                <label><i class="fas fa-lock"></i> Password</label>
+                <input type="password" name="password" id="password" placeholder="••••••••" required>
+            </div>
+
+            <div class="show-pass">
+                <input type="checkbox" id="showPass">
+                <label for="showPass"><i class="fas fa-eye"></i> Show Password</label>
+            </div>
+
+            <button type="submit" class="btn-login" id="loginBtn">
+                <i class="fas fa-arrow-right-to-bracket"></i> Enter Secure Console
+            </button>
+        </form>
+
+        <p class="link-text">
+            <i class="fas fa-user-plus"></i> Don't have an account? 
+            <a href="/register">Create Account</a>
+        </p>
+
+        <div class="demo-info">
+            <i class="fas fa-flask"></i> <strong>Demo Credentials:</strong><br>
+            Email: <strong>admin@degkg.com</strong> | Password: <strong>admin123</strong><br>
+            Or register a new account to explore the system.
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+// Password visibility toggle
+const showPassCheckbox = document.getElementById("showPass");
+const passwordInput = document.getElementById("password");
+
+if (showPassCheckbox) {
+    showPassCheckbox.addEventListener("change", function() {
+        if (this.checked) {
+            passwordInput.type = "text";
+        } else {
+            passwordInput.type = "password";
+        }
+    });
+}
+
+// Add floating animation to form elements
+const inputs = document.querySelectorAll('.input-group input');
+inputs.forEach(input => {
+    input.addEventListener('focus', function() {
+        this.parentElement.style.transform = 'translateX(4px)';
+    });
+    input.addEventListener('blur', function() {
+        this.parentElement.style.transform = 'translateX(0)';
+    });
+});
+
+// Form validation and submission
+const loginForm = document.getElementById('loginForm');
+const loginBtn = document.getElementById('loginBtn');
+
+if (loginForm) {
+    loginForm.addEventListener('submit', function(e) {
+        const email = document.getElementById('email').value.trim();
+        const password = document.getElementById('password').value;
+        
+        // Validate email
+        if (!email) {
+            e.preventDefault();
+            showErrorAlert('⚠️ Please enter your email address.');
+            return false;
+        }
+        
+        // Basic email format validation
+        const emailPattern = /^[^\s@]+@([^\s@]+\.)+[^\s@]+$/;
+        if (!emailPattern.test(email)) {
+            e.preventDefault();
+            showErrorAlert('⚠️ Please enter a valid email address.');
+            return false;
+        }
+        
+        // Validate password
+        if (!password) {
+            e.preventDefault();
+            showErrorAlert('⚠️ Please enter your password.');
+            return false;
+        }
+        
+        // Disable button to prevent double submission
+        if (loginBtn.disabled) {
+            e.preventDefault();
+            return false;
+        }
+        
+        loginBtn.disabled = true;
+        loginBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Authenticating...';
+        return true;
+    });
+}
+
+// Function to show error alert
+function showErrorAlert(message) {
+    const existingError = document.querySelector('.alert-error');
+    if (existingError) {
+        existingError.remove();
+    }
+    
+    const errorDiv = document.createElement('div');
+    errorDiv.className = 'alert-box alert-error';
+    errorDiv.innerHTML = `<i class="fas fa-exclamation-triangle"></i><span>${message}</span>`;
+    
+    const form = document.querySelector('form');
+    form.parentNode.insertBefore(errorDiv, form);
+    
+    setTimeout(() => {
+        errorDiv.style.opacity = '0';
+        setTimeout(() => errorDiv.remove(), 300);
+    }, 3000);
+}
+
+// Clear any stuck disabled state on page load
+window.addEventListener('load', function() {
+    if (loginBtn) {
+        loginBtn.disabled = false;
+        loginBtn.innerHTML = '<i class="fas fa-arrow-right-to-bracket"></i> Enter Secure Console';
+    }
+    
+    // Auto-focus on email field
+    document.getElementById('email').focus();
+});
+
+// Add keyboard support (Enter key)
+document.addEventListener('keypress', function(e) {
+    if (e.key === 'Enter') {
+        const activeElement = document.activeElement;
+        if (activeElement && (activeElement.id === 'email' || activeElement.id === 'password')) {
+            const submitBtn = document.getElementById('loginBtn');
+            if (submitBtn && !submitBtn.disabled) {
+                submitBtn.click();
+            }
+        }
+    }
+});
+
+// Add security warning on page load
+console.log('🔒 DeGKG Secure Login Loaded | Protected by AES-256-GCM');
+</script>
+
+</body>
+</html>

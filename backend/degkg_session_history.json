@@ -1,0 +1,4157 @@
+[
+    {
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            47.89,
+            35.27,
+            43.33,
+            49.19,
+            35.5,
+            49.21
+        ],
+        "quantized_snr": [
+            3,
+            2,
+            3,
+            3,
+            2,
+            3
+        ],
+        "session_key": "fafd126b6e3c57d639eb3987d3e1f7367e746d295057ec0904669491218320f1",
+        "next_session_key": "ccd62f367cad932b7deae7f7bf31e0065e313e34acae272773008fa5b5e2980b",
+        "nonce": "5d3bc5dafe35e5c010e2a1e6eaacc9ef",
+        "timestamp": 1769542197,
+        "helper_data": "6de145645a47ad02",
+        "hmac": "e945081fe1c995b7517de3a58be58abb90890b725846f5e7578c76bd99703445",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            49.41,
+            25.06,
+            49.97,
+            37.35,
+            47.82,
+            43.58
+        ],
+        "quantized_snr": [
+            3,
+            0,
+            3,
+            2,
+            3,
+            3
+        ],
+        "session_key": "12cb5b2630e6df511bd94c6cb31a2494945167a791f5eeeb4fbbaaf588cc658b",
+        "next_session_key": "6f908eb0cd31b14abc18e2f9aedf27d661348e4dd4ba5dca7e942ca60609f6dc",
+        "nonce": "28677a0555c89dceca051843fd54628e",
+        "timestamp": 1769544122,
+        "helper_data": "217e0adfdca8f756",
+        "hmac": "76a64c404e045aba0ed7b0dac104a074b1722ddf545a99d011d7dafa5d8b6bf5",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            25.99,
+            25.22,
+            31.35,
+            21.09,
+            48.58,
+            47.43
+        ],
+        "quantized_snr": [
+            0,
+            0,
+            1,
+            0,
+            3,
+            3
+        ],
+        "session_key": "00ebca3410df21b19f4216144b227083e68d82aed2db976937e5dea99a56f085",
+        "next_session_key": "06b3226904df989644e33204902f48a62376c27ffe5e323e31ab9bf88e05bf21",
+        "nonce": "8aa0d30894e1332a551a597a2c76b201",
+        "timestamp": 1769544258,
+        "helper_data": "2ad958ce14b712e6",
+        "hmac": "29a3a1d32d1d729ff0b1ba0a912a3b321dd7f69b94508c78f7a774972138b608",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            23.85,
+            26.31,
+            25.83,
+            39.95,
+            27.83,
+            28.34
+        ],
+        "quantized_snr": [
+            0,
+            0,
+            0,
+            2,
+            1,
+            1
+        ],
+        "session_key": "ff317f877db65196e58218f42caa0b9dbd5f119781a1ed3a0914d8a37e66912c",
+        "next_session_key": "a0336f0b79b15f47c9b84401d279ed4c48c8331200eaad2e1c9ae35ec69ab6b4",
+        "nonce": "d0413184dd33259b93287d3e286413cc",
+        "timestamp": 1769544636,
+        "helper_data": "c056d8478ac5d1e9",
+        "hmac": "9de4a657de5f8185b21ebc8e24dce09b39748166786aae65b61eb4d7db1f3140",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            30.67,
+            29.0,
+            22.31,
+            36.92,
+            33.41,
+            20.15
+        ],
+        "quantized_snr": [
+            1,
+            1,
+            0,
+            2,
+            1,
+            0
+        ],
+        "session_key": "9c3c39460af427a561d6b746e44348481609b924eb912398df86d5590abe0586",
+        "next_session_key": "b1b92d2024c22cf9d730729679cc8e038b883176457acd5d4663ecfd535a485b",
+        "nonce": "7bec521efeac234971904d1a5d47002f",
+        "timestamp": 1769544862,
+        "helper_data": "182e32337f33f188",
+        "hmac": "3df3596d686ac260abaf016c7903e6be037b598d3b0d129698261cfc405de479",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            31.93,
+            30.08,
+            44.48,
+            48.95,
+            45.95,
+            33.01
+        ],
+        "quantized_snr": [
+            1,
+            1,
+            3,
+            3,
+            3,
+            1
+        ],
+        "session_key": "d0a2e21ce6f441e20c32ed774927d6c97e986e6b6923ea67937e28eb29d7cfb2",
+        "next_session_key": "3b168d2b33830e7dc0cb7837ce6f17286371f510f13dc927ecbb714df256a29e",
+        "nonce": "eea62b2262ea991d32341b68989b58ee",
+        "timestamp": 1769544867,
+        "helper_data": "f7949cac11a96c23",
+        "hmac": "50dce6fbb79a75a13e5c0871ebde56ed7385dab8adea3cfa645393fb24a281b7",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "drone_a": "Drone_B",
+        "drone_b": "Drone_A",
+        "snr": [
+            33.13,
+            31.79,
+            32.65,
+            42.5,
+            30.95,
+            29.99
+        ],
+        "quantized_snr": [
+            1,
+            1,
+            1,
+            3,
+            1,
+            1
+        ],
+        "session_key": "f3239a7a7eb04247e30cb3358684045e9a8688740ea02d75856d665c07f734b9",
+        "next_session_key": "38de4479d7d7a7b0bb3d99e346dc2288091168f701f17bcbbdaf409e44c984c6",
+        "nonce": "0b24face70c12eefb13c64624fefca71",
+        "timestamp": 1769544872,
+        "helper_data": "74820f7053081847",
+        "hmac": "b16f8dd52dc9b0674f38855f312e72cf81e7f8bde4329eb7abebb5b77fcc7ce1",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "drone_a": "Drone_B",
+        "drone_b": "Drone_A",
+        "snr": [
+            34.93,
+            41.71,
+            33.03,
+            46.98,
+            26.91,
+            38.36
+        ],
+        "quantized_snr": [
+            1,
+            2,
+            1,
+            3,
+            0,
+            2
+        ],
+        "session_key": "1dce9c422d2112640a0606d9f199e43241dcb587c48cd743f35a25cf9fd05137",
+        "next_session_key": "2bc87aca7349c8568f29146d0480820c94b45ab3f4725e9bbd504fa6dcd1af35",
+        "nonce": "3937b532ae195f3f0882dc6ce9226b44",
+        "timestamp": 1769544872,
+        "helper_data": "8f3b17bc5f0e7bd0",
+        "hmac": "31bfb2e1b9211894c7edb0b82ae15235dc2922d3cea3ef6a59a29f0edb9c8c1b",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "drone_a": "Drone_B",
+        "drone_b": "Drone_A",
+        "snr": [
+            48.11,
+            22.29,
+            41.58,
+            40.73,
+            41.98,
+            28.06
+        ],
+        "quantized_snr": [
+            3,
+            0,
+            2,
+            2,
+            2,
+            1
+        ],
+        "session_key": "cc42261726ffa78b08331e8c1c69dd6c4af63749d4207f1589eaebacc209ed13",
+        "next_session_key": "011cded2b01742a1755556de72984334a0c3adb4ee3108ec411257597f94ea26",
+        "nonce": "a2aea625f7b2b0ad5280d5ea54323768",
+        "timestamp": 1769544874,
+        "helper_data": "dd62db911b029832",
+        "hmac": "a845b28c38836e54ae6316fa8d3e05466793fe55de80ced8271ad25752c1a9cb",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            31.1,
+            26.04,
+            23.74,
+            28.8,
+            31.53,
+            21.3
+        ],
+        "quantized_snr": [
+            1,
+            0,
+            0,
+            1,
+            1,
+            0
+        ],
+        "session_key": "e09d3e61d8953a78aff24e62f8de079d2123c75fe96387914980d2e6689f826b",
+        "next_session_key": "ce086d81114149d24b4170246db9dd8d0b2fa17d2384605599e33a01480e5368",
+        "nonce": "575b005edf4153696e2026e307841fc6",
+        "timestamp": 1769548485,
+        "helper_data": "4292ddff6d3b3ea7",
+        "hmac": "f658381d4ac37c04a8a3c8d1a3e44af8c2a44d11927f53ae3c474dd9d76b6160",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_C",
+        "snr": [
+            31.38,
+            23.91,
+            36.61,
+            20.48,
+            29.12,
+            29.55
+        ],
+        "quantized_snr": [
+            1,
+            0,
+            2,
+            0,
+            1,
+            1
+        ],
+        "session_key": "9f6c4006902bc9a3fe9d58eb4681bc297ff16024f8f4b8720632b29c3814e7aa",
+        "next_session_key": "854236a5c398af03c6dbe7ad6e2eeddcce0c5e365c3d7e6a3b2a1a6ab49bb7a8",
+        "nonce": "7b807404bf2f01c9a70faa491a966714",
+        "timestamp": 1769548491,
+        "helper_data": "a67eb11e537e9462",
+        "hmac": "ed1953402b70f2cf7cfffff87402e02a6174e1d0cb7de718d6aa6a49f2a08f0c",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            27.29,
+            30.64,
+            23.42,
+            22.55,
+            20.95,
+            24.65
+        ],
+        "quantized_snr": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+        ],
+        "session_key": "19759d00761841aa8b2cb99f5bcc21ff0f9e3349f6f896fa1ba2cdde1232307f",
+        "next_session_key": "b2c16275711bcdf2c11f8a1b8eb6697a2bbfd0a0dddcf04facd0223f4c5068c6",
+        "nonce": "2d632e0c377855894b2bcd06719ea9c1",
+        "timestamp": 1769621356,
+        "helper_data": "f1c6521c69cb5dd2",
+        "hmac": "96427e578ecb3eebc0c270cbbb8feb637e7c850611081e5f10a1a94bd251a032",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_D",
+        "snr": [
+            34.67,
+            24.18,
+            44.07,
+            34.44,
+            38.11,
+            42.03
+        ],
+        "quantized_snr": [
+            1,
+            0,
+            3,
+            1,
+            2,
+            2
+        ],
+        "session_key": "96dbb86740f55afd51416dd69d0ad9d4d576238cc627180b46a6805bc970add0",
+        "next_session_key": "0deb412df7fe623656073523e7120597ba32edc6ee4f8a088954df70a67e48d3",
+        "nonce": "663ff7f82503b6b2a59424705b9e03ee",
+        "timestamp": 1769621360,
+        "helper_data": "97854eb3bc3c2c42",
+        "hmac": "84250d87e6b4b1d167eb6dbfe58c3ef50ab01ab583c851790b2aabf83424113e",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            41.72,
+            31.41,
+            35.09,
+            43.93,
+            24.86,
+            42.05
+        ],
+        "quantized_snr": [
+            2,
+            1,
+            2,
+            3,
+            0,
+            2
+        ],
+        "session_key": "9094cc2bab8635ae4409f1bed75b323ae33939303abfbcf0e905b15dde890b03",
+        "next_session_key": "93ba7536833871ef712dc6831fff4e5d7e9a9948e2a600384b9fb024430959ec",
+        "nonce": "1b608fc1e0d094978ba11648a034515e",
+        "timestamp": 1769622094,
+        "helper_data": "fcfc301daef82a48",
+        "hmac": "9e70bce6c0d2c800eeb85737730dd622f6ea4040a197761d653c14f01022eb63",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_D",
+        "snr": [
+            23.88,
+            22.08,
+            45.36,
+            20.83,
+            48.95,
+            43.7
+        ],
+        "quantized_snr": [
+            0,
+            0,
+            3,
+            0,
+            3,
+            3
+        ],
+        "session_key": "bb3174a894ff90a2d800702fe256abd8c36395b607482296f6e59afcee88f779",
+        "next_session_key": "d1beab9d9054bc0cbb8e393ad457392f0a0e4cb99b75b4d4520df8381e7cefc8",
+        "nonce": "1b9b1adecca2dbe56e7b6061a8901fcd",
+        "timestamp": 1769622098,
+        "helper_data": "ca4f1a39af5c7995",
+        "hmac": "6c9fbac9561f5378ab093969f33d91e13de58c9863bea7fbf416076b5af9e5f5",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_D",
+        "snr": [
+            43.82,
+            35.7,
+            25.42,
+            48.62,
+            20.86,
+            25.82
+        ],
+        "quantized_snr": [
+            3,
+            2,
+            0,
+            3,
+            0,
+            0
+        ],
+        "session_key": "0312cf6553c150929a70495620e6927f7e21f4bf667cfb97f824d5065f91ca99",
+        "next_session_key": "1a1544f2a7e401be61741d6105fbd6ce17bba8215499913a8aa9bb9afcb2d7ec",
+        "nonce": "3adf7b202e77ab299aecf1fea5cfad0e",
+        "timestamp": 1769623163,
+        "helper_data": "2ddd1ac59ed8e5b6",
+        "hmac": "8c3b5582748e01dc5d8865ff23a1a784490a43c40fa0bc99727514f00e0330b8",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_A",
+        "snr": [
+            28.74,
+            47.12,
+            33.19,
+            25.49,
+            30.12,
+            27.71
+        ],
+        "quantized_snr": [
+            1,
+            3,
+            1,
+            0,
+            1,
+            1
+        ],
+        "session_key": "1f83622e6d7246afbf2c4bd0c297a12f1b07a6520f8abb008cac24708896a51a",
+        "next_session_key": "a037efaefa7b7b4e308750d0fdb093516f986fefb74b93d0647b462b9ca9b54f",
+        "nonce": "07dde7fc15f798418131b8a467a2885e",
+        "timestamp": 1769623219,
+        "helper_data": "49728acc37b686d9",
+        "hmac": "37d467aefbdec73f62c6cbd4c4e426e6b7e2e3b9166a93dd303f871f1630558a",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_A",
+        "snr": [
+            44.72,
+            31.13,
+            30.37,
+            38.93,
+            40.45,
+            28.54
+        ],
+        "quantized_snr": [
+            3,
+            1,
+            1,
+            2,
+            2,
+            1
+        ],
+        "session_key": "d37bce2575c0301ee1754e8fcd28cf9623a9e9581dced3081cb52970deebda73",
+        "next_session_key": "0a7a9fc44c7e0de7725e3d3884ceb432661f701e1627ff0f8b3e8199189493c4",
+        "nonce": "86dcdda7d9d130c4fb6d01f86d09e9c2",
+        "timestamp": 1769623221,
+        "helper_data": "b06c043cf76f57e1",
+        "hmac": "9c2329d6b0d34d2b9ef8ea2e527aa0a946729813a0026e0100601e63e481cd2f",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_A",
+        "snr": [
+            43.21,
+            45.09,
+            26.71,
+            48.74,
+            46.88,
+            20.93
+        ],
+        "quantized_snr": [
+            3,
+            3,
+            0,
+            3,
+            3,
+            0
+        ],
+        "session_key": "5059aa2a6374f4933fa28c8be0e32be9d2dbccf745d176bcccf4e3a3e2f8d628",
+        "next_session_key": "052c8f10574692f45387adf7057bc507c1e7dcb63ceaf668a9c6c09efd706a72",
+        "nonce": "231a4c82cf630005e3381288282fdbef",
+        "timestamp": 1769623254,
+        "helper_data": "b1a9e508104a1857",
+        "hmac": "f40b17aff75fe64bb9fcd91f8d2d7d552aa45b7f65ec782f98f14e070ca6119d",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_A",
+        "snr": [
+            35.92,
+            27.66,
+            47.8,
+            28.25,
+            43.32,
+            46.7
+        ],
+        "quantized_snr": [
+            2,
+            1,
+            3,
+            1,
+            3,
+            3
+        ],
+        "session_key": "4e8b973b07546170ed8a765af2997b8c3cc62035a64d598fecc2797d62542774",
+        "next_session_key": "ea2c0d139b579e9090b897c1703b09340179957d9ac49b932897a5d605793f68",
+        "nonce": "38e15234cfb4bfc88bc1ef3c0c15f163",
+        "timestamp": 1769623256,
+        "helper_data": "72cde02f8d521ecd",
+        "hmac": "ee9a03428789d160be85e4d4edf95a905f7182937c15237839f3ad315f3a7371",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_C",
+        "snr": [
+            20.94,
+            40.04,
+            45.62,
+            29.68,
+            31.13,
+            48.49
+        ],
+        "quantized_snr": [
+            0,
+            2,
+            3,
+            1,
+            1,
+            3
+        ],
+        "session_key": "d4742bbecb0269cb6c8d6e046a062274d9a1ed65e6a06b054409ca3aa73440bc",
+        "next_session_key": "961be591375fc59f86193cd9062d79e498e5de3b52236b9a3407c56879cf4485",
+        "nonce": "1ecb88f6507e2337ea9500d7eb41c282",
+        "timestamp": 1769623267,
+        "helper_data": "7453ed3e7df9825c",
+        "hmac": "1f475866470437c26c25ee7510715de4181db754575df0b04b29bba3e7015f0f",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "ce1ed583",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            42.78,
+            22.62,
+            44.18,
+            29.12,
+            44.51,
+            22.39
+        ],
+        "quantized_snr": [
+            3,
+            0,
+            3,
+            1,
+            3,
+            0
+        ],
+        "session_key": "4c06f145141ac4a7dd50da54f80f586b5d4c835e0fc7085eb311c999bac497e5",
+        "next_session_key": "07ad9f5c20a9ccdd528ac17999a7ed444587fefcbfb12c5aac6b13ad0c9b1950",
+        "nonce": "2334c9b9a7f0fcae826d32916cb9b477",
+        "timestamp": 1769623716,
+        "helper_data": "cd05b5eace3defc2",
+        "hmac": "8b60f8b89a694eceb5f7d8beefe7bd9541874719332c841eafa4e77eb286e3d5",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "d48df246",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            28.86,
+            36.25,
+            47.54,
+            32.31,
+            29.89,
+            20.52
+        ],
+        "quantized_snr": [
+            1,
+            2,
+            3,
+            1,
+            1,
+            0
+        ],
+        "session_key": "842c4e71dc6a73938c1ee35f7f0488c7f7a759493466618ea7dac4e4fb36152e",
+        "next_session_key": "665b39c985995b8a0afb7e9c730b5351aa51a72f0d9a68bdba349aa57f468729",
+        "nonce": "74d6db1f4f63716e8c115af3f243c4cc",
+        "timestamp": 1769624077,
+        "helper_data": "5cf777a6e909cfbd",
+        "hmac": "5aa2feeb1cc9cfda0c34c24f5623c75dcf6c03fceec1ead0c30f3f462ba027e2",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "88000f72",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            34.0,
+            27.98,
+            25.1,
+            37.7,
+            21.88,
+            45.32
+        ],
+        "quantized_snr": [
+            1,
+            1,
+            0,
+            2,
+            0,
+            3
+        ],
+        "session_key": "54c467215cb568eeb3da95f2aaed8e8e4e8899c181d2d1b6f21148e49c453486",
+        "next_session_key": "e5785363c96953ade485119f330fb419ed9b79a4528410e30d38ef262494bbea",
+        "nonce": "34ecd07635a213a34a73621e3423dae4",
+        "timestamp": 1769624275,
+        "helper_data": "5a7747ec745c5664",
+        "hmac": "7c94197231ca4858abac97966d6f359224f4112441a67803ee2d93e784022c0d",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "aa7db5cb",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            34.58,
+            39.03,
+            27.96,
+            42.62,
+            26.95,
+            20.29
+        ],
+        "quantized_snr": [
+            1,
+            2,
+            1,
+            3,
+            0,
+            0
+        ],
+        "session_key": "5a36e376ec91450efa2b16ce9976a3a8d55ef260c5e946d2307d132517966393",
+        "next_session_key": "540b6888a637341664184815a86e53a498d933ae5b9edb5b5a6094fe9d2c6044",
+        "nonce": "35cdb9aa0bdb6c929da2188fa3b3b7c3",
+        "timestamp": 1769624307,
+        "helper_data": "9118869f6c30b52e",
+        "hmac": "fd631de7af797671e909b87f0a40fec5cf9c1e71c7a6095d95dcac8465ab534d",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "0d65fd50",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_D",
+        "snr": [
+            39.9,
+            44.3,
+            20.17,
+            29.81,
+            39.57,
+            40.73
+        ],
+        "quantized_snr": [
+            2,
+            3,
+            0,
+            1,
+            2,
+            2
+        ],
+        "session_key": "62fa0a6d8d9dcbba7ebc6d4333a56ee4e64170dfdca3cea0ac77d388011bf6ca",
+        "next_session_key": "a7e0d07846458170c71a4ffba5a03f8fd9f9e82b1ee138ba770fa5748e279265",
+        "nonce": "658d076954dc9584bd68b0c66c3030b9",
+        "timestamp": 1769624346,
+        "helper_data": "2c2f1e8e13e67a8f",
+        "hmac": "545a0d1127e8a62d4b7a1c3442adcb093e777055d6a9d3fb5d86d8a12970b341",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "3024c0e7",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            23.4,
+            47.86,
+            24.19,
+            24.97,
+            38.75,
+            39.75
+        ],
+        "quantized_snr": [
+            0,
+            3,
+            0,
+            0,
+            2,
+            2
+        ],
+        "session_key": "050f5efa157eff7c21479c74a375f8ce274d42c5879c66b61c4290dcf6ee7aee",
+        "next_session_key": "bebbbbaef31674c74c528e3b80550ad9eec033282debd98109d4817837a2d8cd",
+        "nonce": "b6e576815fcc4346c0b78d603923cd4c",
+        "timestamp": 1769624699,
+        "helper_data": "a5cc19c5917ec487",
+        "hmac": "c574b0ebe10924bf743fa9dbee270cce627cabafc47cec4beaafc0a815ce5999",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "6033e23a",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            45.49,
+            33.9,
+            21.6,
+            44.73,
+            25.14,
+            48.52
+        ],
+        "quantized_snr": [
+            3,
+            1,
+            0,
+            3,
+            0,
+            3
+        ],
+        "session_key": "c05b0a3b01b723d168fb48ce4d6e8e0197118cb9eabff2cee35259c4fd05ac41",
+        "next_session_key": "86f2e5f65f8eed662d473204b5570880b555d8709a9091e9d69ec97d1faa7a10",
+        "nonce": "f73c03c2f06bf5d12212bedef22917b0",
+        "timestamp": 1769624915,
+        "helper_data": "50f3e1b5e85d09b9",
+        "hmac": "42b21222f5d7c5f5939cf0a72ef28cb3439568f25377a2c967c15bb0620a0102",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "0da5bc49",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            35.77,
+            34.1,
+            33.45,
+            43.6,
+            39.25,
+            48.06
+        ],
+        "quantized_snr": [
+            2,
+            1,
+            1,
+            3,
+            2,
+            3
+        ],
+        "session_key": "c9ef6cdb6604e2bff1ecb926f04dcb92859325f2cb634d11965d02f03bb63ac3",
+        "next_session_key": "68906b2b2eb59bf3f957280e59fa034ed0ee5e5d6b8e7ea27c2ff0924fa36d86",
+        "nonce": "171c0881b0644d1d8f66fc5394e4746a",
+        "timestamp": 1769624926,
+        "helper_data": "e57797ed88a42541",
+        "hmac": "5e610e7c5b2e665b68d2831ce0f4ee098d266762d055e8fe0ec41262cb046fed",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "e2855fc2",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            49.23,
+            42.8,
+            48.72,
+            21.45,
+            29.15,
+            24.61
+        ],
+        "quantized_snr": [
+            3,
+            3,
+            3,
+            0,
+            1,
+            0
+        ],
+        "session_key": "77a130c4209d72176f13a55ab069db6cc6f3f73e2ca6df2deb1ff0ac6558bf6b",
+        "next_session_key": "36093b0665ad491ce6c47668cfac347651286a598cae34f7a69fed48a28cf11a",
+        "nonce": "d392647c9df595eb56f3d81893d0aea4",
+        "timestamp": 1769624927,
+        "helper_data": "6f99c4b216711539",
+        "hmac": "bf665237a50b60f4139b090e6a349658a5c970fe6ed9973d6f8734d79c8f08b2",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "f23260fa",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            37.06,
+            33.01,
+            39.41,
+            38.79,
+            44.81,
+            40.42
+        ],
+        "quantized_snr": [
+            2,
+            1,
+            2,
+            2,
+            3,
+            2
+        ],
+        "session_key": "6ceed90a6f6160d4c8f08d95f7097d886c9af968678083417fce19b9139bb70f",
+        "next_session_key": "c87e09bb89aa3a997d037700e7a034487ab492d116b89b498f209ae6d0ff963f",
+        "nonce": "826a56dd1883e973da2a17803b631fe6",
+        "timestamp": 1769624928,
+        "helper_data": "e52905fb5f0dffea",
+        "hmac": "aff0643434ef1323d0f3856a1b2e795fbe6c3c78aa632823f697e31aa73887c9",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "1bf8bafe",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            43.2,
+            35.81,
+            25.89,
+            48.95,
+            32.15,
+            42.27
+        ],
+        "quantized_snr": [
+            3,
+            2,
+            0,
+            3,
+            1,
+            2
+        ],
+        "session_key": "10c2f2e1226398e8fafa384a02a64e92db71029b0011b8c2b8adaecb69cec81b",
+        "next_session_key": "6ad4fa59ace97d5b987cdf76f5c6f46f63af09c5932433ea8f5417b54e886819",
+        "nonce": "6502d7dcd7051dd9728ddc474121db05",
+        "timestamp": 1769624928,
+        "helper_data": "5f0eee1ac62d9704",
+        "hmac": "1e7f6aa861d374153b0c30cb9a3805d260d9809298846c1480448c892f1d1ab5",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "d347df22",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            45.29,
+            22.07,
+            44.5,
+            36.41,
+            47.91,
+            22.27
+        ],
+        "quantized_snr": [
+            3,
+            0,
+            3,
+            2,
+            3,
+            0
+        ],
+        "session_key": "3dc90b8365c65c331d3c6fda1d94f6be057317502063b6fda5cf2435cbf7048d",
+        "next_session_key": "c87285bc7e61eec689e19c9b71b1f6a0ba1977c441a2a265ed5cf0cd729bd544",
+        "nonce": "b4c5963bfca2d51489d7edaee24de3a8",
+        "timestamp": 1769624929,
+        "helper_data": "fd470f300498565e",
+        "hmac": "55843cb08ba96a79717041035684189af212529446208eb91fdd23141a2386d9",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "fb702503",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            36.61,
+            39.56,
+            31.39,
+            48.29,
+            26.61,
+            23.77
+        ],
+        "quantized_snr": [
+            2,
+            2,
+            1,
+            3,
+            0,
+            0
+        ],
+        "session_key": "99d27e92e09ff329dd987ddc49413ee0100f59e6fc15df78a429cbc9d60cac35",
+        "next_session_key": "f5808807a084cf32dbd46419a4cb889185f01498a3cf101a1c593450ede30acc",
+        "nonce": "fd72fec58650f08c62e3c50f989b2307",
+        "timestamp": 1769624929,
+        "helper_data": "3127e995245edde0",
+        "hmac": "01a6b5533ceff251ea0e84cbd58c43c7b3648c6a45545421778fb795702096ad",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "b3caffea",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            49.26,
+            47.1,
+            40.49,
+            24.14,
+            38.52,
+            26.59
+        ],
+        "quantized_snr": [
+            3,
+            3,
+            2,
+            0,
+            2,
+            0
+        ],
+        "session_key": "5bd1e3c16a6855926d2e31772d3949445cb98a902745b269cba346aac0484049",
+        "next_session_key": "88198b4761b8c52a1fa40841f4245d5581a76f624a8b4fd1227e15eb440e3b43",
+        "nonce": "4827eb6117d82f16fc58e8ab1aa87290",
+        "timestamp": 1769624929,
+        "helper_data": "f0af98ba734b2ca6",
+        "hmac": "66cb19eed849cd4a42b2d6ac883727877a2b73da6f35b29a21782073e66d6801",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "55125773",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            26.18,
+            32.36,
+            40.01,
+            29.36,
+            43.03,
+            21.74
+        ],
+        "quantized_snr": [
+            0,
+            1,
+            2,
+            1,
+            3,
+            0
+        ],
+        "session_key": "044f87004ebc4fc0004c222c4466bbe332cf869a5d49e36ca6fb63c14a48f4c5",
+        "next_session_key": "9d50c10b6dcfcbb2e51c66d26cd2b3b26df98f6546aac8d9a4f2778d1d783ddd",
+        "nonce": "b27e5744e4ff81017785493bd52637c5",
+        "timestamp": 1769624931,
+        "helper_data": "c4ed0852df593817",
+        "hmac": "28ff7dff9eaf32427c50834c2de5eef6ef05fa35f310fe0e1a3af6f0e803e9e7",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "62c4bb36",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            49.73,
+            22.98,
+            46.46,
+            25.24,
+            39.96,
+            28.31
+        ],
+        "quantized_snr": [
+            3,
+            0,
+            3,
+            0,
+            2,
+            1
+        ],
+        "session_key": "97edf17e5e74f207faf4c43a566d4f321687fff15830de4f6adb4b84059b3e53",
+        "next_session_key": "640268011ed4254b9d14f3751a1a5ede2f51efd65d220a32702a4b10cfe9e304",
+        "nonce": "21f923094a8cd2cf24efa9240b5cdc01",
+        "timestamp": 1769624938,
+        "helper_data": "266c1ca38f0a5d76",
+        "hmac": "6d17e92deb69f971432e45737bdc037be6f1c81f1c83be12b28d909052aba44b",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "66d206d4",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            24.49,
+            28.52,
+            41.45,
+            39.85,
+            32.7,
+            24.81
+        ],
+        "quantized_snr": [
+            0,
+            1,
+            2,
+            2,
+            1,
+            0
+        ],
+        "session_key": "e73739d94134dbe759bd748cd2a01f4fe279e9c1907ccec711a006d2393361ea",
+        "next_session_key": "40663b14c6c22eb92b87be7d2236f5abdc1a197ac9fe7027a36129205e6e212f",
+        "nonce": "f0a1465ff3decc99431fda50beba9d2b",
+        "timestamp": 1769625163,
+        "helper_data": "0af547d373d31a0f",
+        "hmac": "12bc93bb05a78dfbb678f7209eb1b58a4c425f01ef3a28c5b8ac2b5456267950",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "33b462e4",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_D",
+        "snr": [
+            33.38,
+            33.39,
+            48.9,
+            32.11,
+            41.67,
+            37.68
+        ],
+        "quantized_snr": [
+            1,
+            1,
+            3,
+            1,
+            2,
+            2
+        ],
+        "session_key": "d24adfe183746031778c0cdac418907cdf394a130a346cfa08469d3b029b6245",
+        "next_session_key": "7ef99bb101019524e6b3458c725267faea977b322699725919556b4969247957",
+        "nonce": "476ed562f94f2be7fb41374a20fd53ce",
+        "timestamp": 1769625181,
+        "helper_data": "eb148b8b4fae02d6",
+        "hmac": "4e536aa195a58bc22b0a4cae489d9ab4e29894e18c09a61aef67e44762d3cc53",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "6e8332df",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            26.3,
+            28.7,
+            32.86,
+            44.45,
+            24.37,
+            39.24
+        ],
+        "quantized_snr": [
+            0,
+            1,
+            1,
+            3,
+            0,
+            2
+        ],
+        "session_key": "552f4d7498844c0bed868beb7a32fbc65b3ddd12e054ea9adaeb00fcb8444746",
+        "next_session_key": "56a6bb011ca2908580bcf069872f8333b57d97f122efa600dae263a30d3dac71",
+        "nonce": "98ea1658747379bf99145aa29a1da0cc",
+        "timestamp": 1769625460,
+        "helper_data": "c069bf9085076248",
+        "hmac": "65a8762953a867d44f529a40298d8f6c46a4e72c92d7cf63d1adde1baf52843a",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "a83ad5a3",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            29.14,
+            28.27,
+            34.88,
+            32.76,
+            41.75,
+            23.36
+        ],
+        "quantized_snr": [
+            1,
+            1,
+            1,
+            1,
+            2,
+            0
+        ],
+        "session_key": "6d947bcdfed4c0d4efe7f4a4bd341d77d5eb94084b166011f760587c6ef45e7f",
+        "next_session_key": "6588a0d1ca812fbd3b82c459ebb46d6703969cc8d5ac4926287ce0cc47a532aa",
+        "nonce": "4160f910c8e2c2416e5d837d95d7562e",
+        "timestamp": 1769625469,
+        "helper_data": "f503324ce31c44d0",
+        "hmac": "64a417a061080be921bbb391e815af9c881fd7bd415b83cfa0b5751b942c7194",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "f55b90b4",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            46.75,
+            44.87,
+            27.18,
+            27.97,
+            27.16,
+            35.26
+        ],
+        "quantized_snr": [
+            3,
+            3,
+            0,
+            1,
+            0,
+            2
+        ],
+        "session_key": "0c4edd225f54dd7c168956c10af7360d50a01b8b94f10e75661295ed2c8c0933",
+        "next_session_key": "e9cd97a82c1f7be944b614d81a82a1a32c7296df5601c74d7166dc3c92c3c876",
+        "nonce": "9787e5eee45ee69990c2e4ff52459f3d",
+        "timestamp": 1769625470,
+        "helper_data": "3270eab48235cf71",
+        "hmac": "0c70e25977cc5404cd14638012846fca5726aa8ae9a86317f409d3dbf79e5025",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "ef16391d",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            29.63,
+            48.61,
+            25.08,
+            42.02,
+            42.77,
+            49.19
+        ],
+        "quantized_snr": [
+            1,
+            3,
+            0,
+            2,
+            3,
+            3
+        ],
+        "session_key": "d9b4a7320b3d8d1c452b6ddf0b5616cfe6fd42d3b39b46c3966ce0aaa1919e33",
+        "next_session_key": "60615bd11e15761d21bc86400df887586ac5f8ea88d193b9e0e32ef4cbb84c19",
+        "nonce": "c2e022ad41b0c0fbf0eabb0e4d3588d9",
+        "timestamp": 1769625502,
+        "helper_data": "eb0fae209ef308df",
+        "hmac": "02e83fff1f7680352249a7d9211c6654058471201beab3ea336203c42c06d28a",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "cddf4996",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            23.93,
+            31.26,
+            26.39,
+            23.23,
+            31.04,
+            25.11
+        ],
+        "quantized_snr": [
+            0,
+            1,
+            0,
+            0,
+            1,
+            0
+        ],
+        "session_key": "2c76f95a8228c633fbdc59ada57364ab624756db164f2f271cacb8622dfe137c",
+        "next_session_key": "49b15611d81f33b0413e2e4476950840fa49b64b9ff30081974ad3b552ccfcfd",
+        "nonce": "acd5d937b14960e7ed7df752128b26df",
+        "timestamp": 1769625516,
+        "helper_data": "a47dc87fef3c9128",
+        "hmac": "88c684f394afb66e0bc596d88e3a9564d25dee8eb7211490c62ff6e963d615e6",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "089faa90",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            41.66,
+            47.72,
+            32.01,
+            47.8,
+            42.98,
+            42.54
+        ],
+        "quantized_snr": [
+            2,
+            3,
+            1,
+            3,
+            3,
+            3
+        ],
+        "session_key": "df897bfa4f22e3c8b35c7675acb460efddd5b9ccd4bebebe137b3cbde2ef0edb",
+        "next_session_key": "f286ba014adec4bfafa467b4ca55ad02bcae0db675533fb24ec4d33ce142feaf",
+        "nonce": "9906b67272021c2043a4d4a93c82ee93",
+        "timestamp": 1769625517,
+        "helper_data": "384fc3193a1e22f1",
+        "hmac": "1f2b9feaba6747eb0e59e4e803e444bb44338f0ef3e39cf5bf80d674eb08efb8",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "829dd50f",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_D",
+        "snr": [
+            25.77,
+            24.03,
+            48.76,
+            29.17,
+            34.79,
+            49.43
+        ],
+        "quantized_snr": [
+            0,
+            0,
+            3,
+            1,
+            1,
+            3
+        ],
+        "session_key": "e552cffb2552a1219261e82bc99f86c6ad781990741beec0156c04d8a633ed45",
+        "next_session_key": "03aaf3c0c0d5befd75fe1a34267f89b61d2de3638652d0c54ffa74b871ad7fc5",
+        "nonce": "0a9117883cbc21c5489ab332c191a135",
+        "timestamp": 1769625524,
+        "helper_data": "34c2b0b3b5c3f745",
+        "hmac": "d6f03ed54d6801b4a2b94d763359446a2dab2424552969c316568f88a82d570f",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "476328b5",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            36.17,
+            26.67,
+            43.8,
+            35.46,
+            37.17,
+            40.92
+        ],
+        "quantized_snr": [
+            2,
+            0,
+            3,
+            2,
+            2,
+            2
+        ],
+        "session_key": "fa8f146647e42d2797485ea226839464495dd7c15ec4c2db41b33cb2cf37cf1b",
+        "next_session_key": "310d4c232b0683efb9e782f3d2e6156e53ae48283882e10bf5f088408de00e53",
+        "nonce": "a6997f493cfaee16becae4aa17de33be",
+        "timestamp": 1769625617,
+        "helper_data": "2926ae111fd01289",
+        "hmac": "ffc67eab0d02f6557724f669fd6e7b7b6c71f829d90ada575c23cdb30b0efebc",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "ca166695",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_D",
+        "snr": [
+            32.14,
+            27.3,
+            45.48,
+            34.03,
+            41.21,
+            30.1
+        ],
+        "quantized_snr": [
+            1,
+            0,
+            3,
+            1,
+            2,
+            1
+        ],
+        "session_key": "af13a4818e452e603b2306e171dfe36930269855bc08583c67860f94bbaf28bd",
+        "next_session_key": "85b5d84a3a21957e686053949a6a717cd6b0aa3ea8641b3e55457f8666f30da9",
+        "nonce": "ca07d6422635a9fb39e4b4cdc8bb1bdb",
+        "timestamp": 1769625633,
+        "helper_data": "412decf373bb2bb6",
+        "hmac": "39a25ed7dab7c9c2f58dfc2488ea318da11fa712140938b9c4a0f6e0a0950897",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "082564c1",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            32.56,
+            34.35,
+            46.32,
+            45.41,
+            41.42,
+            32.47
+        ],
+        "quantized_snr": [
+            1,
+            1,
+            3,
+            3,
+            2,
+            1
+        ],
+        "session_key": "18587de80c1858cef506c12ea7c845a16b8fb8135350d9b6c137cbdcacd03cc2",
+        "next_session_key": "12796d219dd541b7e450549519f3069c5a931be6deb47b501b11fe717e361da9",
+        "nonce": "1dd362f32e191009147a174a21b64d2b",
+        "timestamp": 1769625929,
+        "helper_data": "103111099cb6a759",
+        "hmac": "0a080cb9b21f899a0425253a3e6a1888a54e930b320f64f0d77ee204808e6fd1",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "6a7b77a8",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_D",
+        "snr": [
+            36.07,
+            23.02,
+            21.07,
+            23.68,
+            21.83,
+            43.2
+        ],
+        "quantized_snr": [
+            2,
+            0,
+            0,
+            0,
+            0,
+            3
+        ],
+        "session_key": "794dbaf72d2506c159cb1f268d45e22424952f4ca5a7b071320c07de24ac14a5",
+        "next_session_key": "e1065305fb5dab82cecd15740518a5a7c4e77a00352be56105328159154f0ccb",
+        "nonce": "cf9b6d6b1f17322477a3ebabdcdd8961",
+        "timestamp": 1769625939,
+        "helper_data": "b8dc93d4e1e556b0",
+        "hmac": "3444bead27e27722cf56618aa6aa4aef0be0b21af22784fad443970de89dafa5",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "3c2e3009",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_D",
+        "snr": [
+            24.18,
+            25.23,
+            20.6,
+            41.18,
+            23.53,
+            48.83
+        ],
+        "quantized_snr": [
+            0,
+            0,
+            0,
+            2,
+            0,
+            3
+        ],
+        "session_key": "729e67c5251b51fe3b018fd5ad7cc23869a901b072d1088bca6a442d9ba5a6ce",
+        "next_session_key": "ad5511266e7f7c060bb0a3048b306a78defdcf3b5090a62ba60df2a66c050c41",
+        "nonce": "25a17553b2171477ae7e3855dac6cbd2",
+        "timestamp": 1769626088,
+        "helper_data": "63497bd0f5de93b5",
+        "hmac": "f4d61ae90c1ca6d39d7b5fef900ddd456e12ae1b4a9956ae08df89d4f8fef4f3",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "5113970b",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            38.05,
+            21.44,
+            29.6,
+            32.24,
+            26.91,
+            39.01
+        ],
+        "quantized_snr": [
+            2,
+            0,
+            1,
+            1,
+            0,
+            2
+        ],
+        "session_key": "d9961237a269603a272d59a653aa32ad1c6a1ce73ba66d4ba4f75a89a047a318",
+        "next_session_key": "2bbea6d82cf381d2c807be704fee785b209621a0011d2e545e60f787cc9456e0",
+        "nonce": "c48cdfdd54472ccf76df78b02cad1625",
+        "timestamp": 1769626551,
+        "helper_data": "31c75c67c61d6946",
+        "hmac": "4f4d6fbd752ff61087f941b8bdad520cbe15b162b52e85a4a9f914e73844c513",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "d9c1d0ab",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            23.14,
+            36.52,
+            27.35,
+            31.2,
+            44.44,
+            38.35
+        ],
+        "quantized_snr": [
+            0,
+            2,
+            0,
+            1,
+            3,
+            2
+        ],
+        "session_key": "e5b4e0fc50354a931bc3a132348c07966df28bd4b5dd57e118920baa278b100b",
+        "next_session_key": "9986c53b976317901ba363e418788c2344f116a046fec3f26f8c93e692b8c03c",
+        "nonce": "4efa135cdae442d6bd364ba25b0bc0cd",
+        "timestamp": 1769626553,
+        "helper_data": "3063621499a69ec3",
+        "hmac": "012ec429c06099491aecde8c5bf399b4bb6857d6dc72cf2d3212338e109bbba1",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "dcc322b2",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_D",
+        "snr": [
+            38.35,
+            27.01,
+            43.44,
+            42.26,
+            46.85,
+            47.19
+        ],
+        "quantized_snr": [
+            2,
+            0,
+            3,
+            2,
+            3,
+            3
+        ],
+        "session_key": "02db139a0f0d059b41fbab1f9b39844079bfb1d4d2b9b2fefca7b93f876dff85",
+        "next_session_key": "3b85f36e27a9c5d4e5cc0161dc9f9b931ac71b0a30f27837adcea8682253a6f7",
+        "nonce": "95fe9d502955cad473117d142b10aec5",
+        "timestamp": 1769626565,
+        "helper_data": "93322e585dd03d4c",
+        "hmac": "6e638c0fa8f2c842cf5e2c2c53a8fe25a5e7399e8715a785662fab90505d73fa",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "b4d84d36",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            36.68,
+            43.15,
+            38.63,
+            29.88,
+            24.73,
+            41.59
+        ],
+        "quantized_snr": [
+            2,
+            3,
+            2,
+            1,
+            0,
+            2
+        ],
+        "session_key": "3b72924df24a62ef4753348f8959407f730cc98d7e239827007f9901c83ee854",
+        "next_session_key": "96293c0bacd64a63da9c22572c86f5dafa40ca3d5c90a59fbf31d9f6353651c6",
+        "nonce": "21b8cd2a0a42c5f81227fc29b8a53607",
+        "timestamp": 1769627129,
+        "helper_data": "c22affcd87b3d4eb",
+        "hmac": "73a2a02d7c86617e49d2e85c3892c528a94249abe4586383d58ba8dfde521feb",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "9e33e1ca",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            39.5,
+            26.88,
+            45.24,
+            25.91,
+            46.65,
+            21.75
+        ],
+        "quantized_snr": [
+            2,
+            0,
+            3,
+            0,
+            3,
+            0
+        ],
+        "session_key": "cdc5f92c30bd58043a52f156b82f383844e84efe8cde87fadbe20e950b1d0923",
+        "next_session_key": "6059a4550a2e6a8e5d68adb5ee0f4bd82db426d532699c7521f532a56f721a5b",
+        "nonce": "1326d03f0c5a24f52eadec45c3ecab40",
+        "timestamp": 1769627150,
+        "helper_data": "5661fe4f083e0083",
+        "hmac": "b3bb83f406c3ba608b3c311a0950eec271a4f73d47800ec0b7113a2b9d5d71dd",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "c7edbd99",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            29.14,
+            48.8,
+            23.88,
+            34.6,
+            42.6,
+            44.56
+        ],
+        "quantized_snr": [
+            1,
+            3,
+            0,
+            1,
+            3,
+            3
+        ],
+        "session_key": "424004972340c49f650f57886e4461b4e1e07486d9039416ec9c51c8942c5e96",
+        "next_session_key": "5314fddf752432cbbe23721ef9b96d30a66494ace001bc9930b10c357b19a83a",
+        "nonce": "14c51700f98c8153a34dc431ae24ddf8",
+        "timestamp": 1769707459,
+        "helper_data": "48a4b4dae134e586",
+        "hmac": "37231a69f3584467fa68ae653dd1fe861620eb88d6b05829c18eb101e49cc363",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "641aa1ad",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            44.31,
+            46.52,
+            48.42,
+            21.61,
+            20.75,
+            34.32
+        ],
+        "quantized_snr": [
+            3,
+            3,
+            3,
+            0,
+            0,
+            1
+        ],
+        "session_key": "c2a34ba6297f278c368a531dfb4d394a8d4703a62794d0c81ce7df5f1a0566e6",
+        "next_session_key": "b347a0c561a7cc8e3da8c940e9c997d30cdc01ce3fcca261840b7c4083b44e88",
+        "nonce": "712d770230031a4b1d2862179adc0b7c",
+        "timestamp": 1769707464,
+        "helper_data": "c871466a43bb721a",
+        "hmac": "65cf3a6563c67a0dd7117a068727cf8d348c612cab5c26dde0abb318797f4b74",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "a32afce4",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            23.35,
+            23.67,
+            29.28,
+            30.96,
+            22.62,
+            45.2
+        ],
+        "quantized_snr": [
+            0,
+            0,
+            1,
+            1,
+            0,
+            3
+        ],
+        "session_key": "953edbe29e0f6eeb305bf5e70ae929039ac1e9dd9bfbe44741503ac2ffd25b2b",
+        "next_session_key": "8ff693b30a690947c388feae08ede72eccda6d849930f3e3f934aa485e80aef4",
+        "nonce": "dcf30271ac560bce06da79d8d6471189",
+        "timestamp": 1769707847,
+        "helper_data": "e1837f2d36d78729",
+        "hmac": "cc65530676c8e34d9e5cbc22a47ca1a90d11bdd4890888e9e9e512804093c61e",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "dc73e97a",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            33.32,
+            22.72,
+            29.47,
+            28.96,
+            23.16,
+            21.17
+        ],
+        "quantized_snr": [
+            1,
+            0,
+            1,
+            1,
+            0,
+            0
+        ],
+        "session_key": "85c32935d604f5a74d5b18404747b8c5a9f62ce0a44bd69f1a659dbe837ed490",
+        "next_session_key": "e2b7beaa2762a3d305c01447448088b49a9c345a0bb6e868642cf72971c18226",
+        "nonce": "80fb283972244b59b85b794b5f27f88d",
+        "timestamp": 1769709016,
+        "helper_data": "65565f2ff3171140",
+        "hmac": "a84599283ecb927239bb4069c3f0bd776432496a4fb34b8acb2a4365d704d392",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "793e8145",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            37.48,
+            30.46,
+            46.21,
+            25.3,
+            34.76,
+            33.33
+        ],
+        "quantized_snr": [
+            2,
+            1,
+            3,
+            0,
+            1,
+            1
+        ],
+        "session_key": "540a80ee1249f370e70a6ec919aa57ecfc908f73f7fb71582309f548e8f738ff",
+        "next_session_key": "f76d086645ac84a21c2f6800db3578179862c094e2440a11fdcf0381a3866e63",
+        "nonce": "b03aaebdbbea564bda29d7865c8b9af5",
+        "timestamp": 1769709018,
+        "helper_data": "0a62a7f2602068ee",
+        "hmac": "e1cbbd79f4150aaebf309365275bf7af02edba8058baff79deed2967acc6ee92",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "a8612f01",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            38.3,
+            36.69,
+            20.61,
+            29.45,
+            21.31,
+            32.21
+        ],
+        "quantized_snr": [
+            2,
+            2,
+            0,
+            1,
+            0,
+            1
+        ],
+        "session_key": "fd1bdb6edd96c20e46df1fd823624bbe22e6f0352522d9b653261575709c0983",
+        "next_session_key": "0321c28c397fb8f719c87703f4596db62e957d530cfa3ff521afbe016d834506",
+        "nonce": "49c07c9c8a74b94a016dbd5f6ada4e71",
+        "timestamp": 1769709023,
+        "helper_data": "c92231aeeb8b50d4",
+        "hmac": "ce0e68a40909492600a9955dd6964ebeeb659c02f4bf2084f164181b8bc9ad5e",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "bf37dc5c",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            38.06,
+            29.29,
+            31.98,
+            37.4,
+            46.25,
+            37.42
+        ],
+        "quantized_snr": [
+            2,
+            1,
+            1,
+            2,
+            3,
+            2
+        ],
+        "session_key": "e986dd4642ea8662361379576a1e5dbc430a7cd52ce7ea1a05af6f8df8e1e0b1",
+        "next_session_key": "fe2991594c9c5e10a6e5d219e9006c1abf81c6e822e9895b957b22c8408a4959",
+        "nonce": "1336afc1d30fca2c250b93a324faa524",
+        "timestamp": 1769709024,
+        "helper_data": "83678f6db3fabda3",
+        "hmac": "c4df38ebc4a967c56f9e19a91e4c2b27b9f57bfef708196b4290d7c0ef3fd3a8",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "1a74b54a",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            42.55,
+            39.45,
+            40.91,
+            43.68,
+            48.02,
+            20.89
+        ],
+        "quantized_snr": [
+            3,
+            2,
+            2,
+            3,
+            3,
+            0
+        ],
+        "session_key": "652738d1991c427f818fbbf2fb37df41e26d52db6733ad542c04811c661b145f",
+        "next_session_key": "6b7be21f34ac4a8a5862371f43a6ca1a34d3aeb9979b9ea8f172c54a192214da",
+        "nonce": "02aaa31ab0ae8a0596fc7f3f87b90de9",
+        "timestamp": 1769709024,
+        "helper_data": "78c20e3338e40a6d",
+        "hmac": "c630e59d8c7e4e85aa2d45c7f23d6b157a05517a542a8fb229a61a8bc3acdbcf",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "d741c7a9",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            35.11,
+            23.06,
+            22.31,
+            38.49,
+            40.45,
+            38.12
+        ],
+        "quantized_snr": [
+            2,
+            0,
+            0,
+            2,
+            2,
+            2
+        ],
+        "session_key": "4e49b214465a61e043afef266a4b3f517a8637093e33b6a6c88be09ae10c552a",
+        "next_session_key": "0490d1db43a184fd73b31a980a27826a9d61caa914e9707656e39d280eff3f18",
+        "nonce": "d22f99e4ce995ca7bbe433f5f26e8b7b",
+        "timestamp": 1769709024,
+        "helper_data": "0f453ec3862b3152",
+        "hmac": "a9212d3731f5cfa1f4bee5899cc45aad4ecdff6b323146b3b77291439b8f2c7a",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "8e46352d",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            23.05,
+            33.78,
+            25.33,
+            45.34,
+            42.21,
+            30.46
+        ],
+        "quantized_snr": [
+            0,
+            1,
+            0,
+            3,
+            2,
+            1
+        ],
+        "session_key": "12b2619283d050962858089cc35e20c44a2700a87690531b6f8b60f763482a03",
+        "next_session_key": "e48c471ae9d785eb24ce7cdad621f6be7fa86ec493aa61b95e8eb25e08625a4a",
+        "nonce": "958c0868c36886d8aa886ee2088e4a62",
+        "timestamp": 1769709028,
+        "helper_data": "d0f24fd93e935676",
+        "hmac": "2934f9c8c1ead74c0c5dd5302b713f99475eb8daba83be03f2adb0fe2ad8c817",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "341b5a47",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_C",
+        "snr": [
+            30.05,
+            39.42,
+            29.72,
+            22.14,
+            46.16,
+            20.12
+        ],
+        "quantized_snr": [
+            1,
+            2,
+            1,
+            0,
+            3,
+            0
+        ],
+        "session_key": "61ac196bdcc9ec8fdfd3ee4249e5a942c47886a0949e7350d815d8d9fa208617",
+        "next_session_key": "faa3a2d4e36215925c8343ca72c3e78731fe2777660073738527c5a679d818e8",
+        "nonce": "66c306acfad4f87e045e0d4092d5e127",
+        "timestamp": 1769709033,
+        "helper_data": "b1b1794c474345f9",
+        "hmac": "fd0b446f0469e21676e36b14d85c32786d62a329e6cc7406eace4a50a87e54f1",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "a1a9fcd4",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            24.91,
+            39.31,
+            29.12,
+            34.1,
+            44.4,
+            32.01
+        ],
+        "quantized_snr": [
+            0,
+            2,
+            1,
+            1,
+            3,
+            1
+        ],
+        "session_key": "6f487c8d763c74275f62ef5902be3ab6876383de15488e4cbe68e124a43a54c8",
+        "next_session_key": "18a51c54ad413b3a934c8ef8ffd5eb0ba7bb0487ddf93af5c247d617824bf750",
+        "nonce": "60766a1520307b9c39ec4a4509c711cb",
+        "timestamp": 1769709529,
+        "helper_data": "5ae60e8ddd01dead",
+        "hmac": "3d0c127642772b12138d54f9140e522b63f0694b81e78f4455f9149bbe629d69",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "8c1d7dc7",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            25.36,
+            22.73,
+            35.31,
+            23.69,
+            25.71,
+            31.92
+        ],
+        "quantized_snr": [
+            0,
+            0,
+            2,
+            0,
+            0,
+            1
+        ],
+        "session_key": "de1a6e6362da159c3dbd96a9c3b2c895ef49cf9b85cad6ee058fba504ace0ea9",
+        "next_session_key": "5f9dedc07673f25a704debd4ff854a9eddc8b67c5f2f8e5a26c79c60f5ed9e85",
+        "nonce": "716a2b59b5aa63e0407b756c920ec48c",
+        "timestamp": 1769709538,
+        "helper_data": "2a93443f847ccd75",
+        "hmac": "a6fdc2a290e5153c796a5c430486f1035c0696636a5d072ddb4b7fc139432c31",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "7f30c81e",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            41.16,
+            24.25,
+            24.18,
+            49.55,
+            21.28,
+            24.79
+        ],
+        "quantized_snr": [
+            2,
+            0,
+            0,
+            3,
+            0,
+            0
+        ],
+        "session_key": "24ea34dd1fa3d6feec25336a99d74ab1b2caa5af1e7499ef19c6995f83ad16b0",
+        "next_session_key": "933912932f537b667ff8fa6802a65c7f0270417e2dd296bb07613ed2cf27a8ee",
+        "nonce": "3504956784e7dd4be94d92ed7c9b614f",
+        "timestamp": 1769709613,
+        "helper_data": "19d6c08f8ef3bb84",
+        "hmac": "5e2fb1e5eec3b60d7e1df4ef70fdbb7b0aefa64896412b7519df703fcc788594",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "933e6585",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            39.49,
+            41.57,
+            28.11,
+            24.24,
+            35.64,
+            47.23
+        ],
+        "quantized_snr": [
+            2,
+            2,
+            1,
+            0,
+            2,
+            3
+        ],
+        "session_key": "5442235d3e957a4bc48b21440ad941975960f5623bb67deef7109b2eae1b3a51",
+        "next_session_key": "024fdbf6c155a2c6a03d297e733e8db8b6b533451887ae21f0f09034f57a9065",
+        "nonce": "0c372788da1cca90b2c3ce866676db0e",
+        "timestamp": 1769709927,
+        "helper_data": "9f8ee4332a0c6b06",
+        "hmac": "2bf33434a1453725eb1a25d3e374dab111d2f950246bc672f434d9864998e01b",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "92f9beed",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            34.98,
+            33.37,
+            46.34,
+            48.51,
+            26.79,
+            42.67
+        ],
+        "quantized_snr": [
+            1,
+            1,
+            3,
+            3,
+            0,
+            3
+        ],
+        "session_key": "adf795fcc4ffc138664271caef7c1ae101e737809af2f9b7fa399ba295340c3c",
+        "next_session_key": "9eec823f262ef5ed7e47a031c81c5e5de0347a0e6545ded2f470caffb7da47d8",
+        "nonce": "7a4b6af2f18c4c19c1fdfbc6da648af3",
+        "timestamp": 1769710161,
+        "helper_data": "f7a51af9dc53d1bc",
+        "hmac": "fd0035f009a320c7644c65a2bffcb9dc63c141ea23db55b5e7b711b9af2e90a7",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "49947841",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            39.55,
+            44.37,
+            48.48,
+            22.18,
+            34.05,
+            37.87
+        ],
+        "quantized_snr": [
+            2,
+            3,
+            3,
+            0,
+            1,
+            2
+        ],
+        "session_key": "db31d88f76b374e6a30d31c00ef34e2f4f3b6473179964159ca7bb2180e378f0",
+        "next_session_key": "3f826eda81de6cbc98834263b7f5f6494b576333d088239ef30c8e90a6e35fc6",
+        "nonce": "fe5dafeed6de45433c87f275c808db29",
+        "timestamp": 1769710167,
+        "helper_data": "6a1d3de1a1f47748",
+        "hmac": "5f1b0eb179b44d49b49890dea881e5b29c4f949761c2043af22d6c8f586037a5",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "55044bf5",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            24.57,
+            36.45,
+            22.21,
+            41.3,
+            49.01,
+            32.9
+        ],
+        "quantized_snr": [
+            0,
+            2,
+            0,
+            2,
+            3,
+            1
+        ],
+        "session_key": "2c9044ec4b6ce9cbefbbd0a8104a6569cce71302ff97a66cce5af88e6b851194",
+        "next_session_key": "8e3003e92093b16a10581323ca6b83213ed068df1c27013cc733faf30a87e22c",
+        "nonce": "f4b17736afc484b1096eddafd6bb4591",
+        "timestamp": 1769710370,
+        "helper_data": "c29ad32540c34e45",
+        "hmac": "101a4352d20020218c311fd9c448d3d965fd4fbc564d9456a248ea914c807433",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "470adfc4",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            30.43,
+            29.43,
+            24.95,
+            39.66,
+            29.27,
+            29.41
+        ],
+        "quantized_snr": [
+            1,
+            1,
+            0,
+            2,
+            1,
+            1
+        ],
+        "session_key": "e097047c360288a22919d7902e43d520a396d692282bd23074492f28111d1cc7",
+        "next_session_key": "73d22568f08f3260ea602598c8ef0b051d0ed20af239581e66dbbd3ba416a13a",
+        "nonce": "c380705b41397360b34fb498385b9af9",
+        "timestamp": 1769711321,
+        "helper_data": "c8b385a9ac10aa0e",
+        "hmac": "d469d478e03d22ecaaa2970c73d4b057160d050db5a9d5bfaac398c2655d8d3e",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "fcd6a71b",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            21.37,
+            45.94,
+            35.3,
+            45.79,
+            26.12,
+            43.1
+        ],
+        "quantized_snr": [
+            0,
+            3,
+            2,
+            3,
+            0,
+            3
+        ],
+        "session_key": "e97ec80bd4038d5a681e2c6b0a9092351544878c05074d87d694b6aa52740131",
+        "next_session_key": "2b8e056d6dfb2340b6eb79755fef768b6cef2e1ce2991d8318614a7c6f1a06c4",
+        "nonce": "eb3c93ee98595642447e3342c787b835",
+        "timestamp": 1769711802,
+        "helper_data": "3aea9ea66453518a",
+        "hmac": "b5d30d584eb90c0339539ba49f3d8b0e37a1938e2a2f2db78eadd11a757b4532",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "61b25ee4",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            25.83,
+            20.28,
+            26.96,
+            30.62,
+            48.18,
+            36.94
+        ],
+        "quantized_snr": [
+            0,
+            0,
+            0,
+            1,
+            3,
+            2
+        ],
+        "session_key": "1f55dca060b58a921a0b7adb65d3fe34764bf7535ac908fbc424c7a75a0ba471",
+        "next_session_key": "878d43ab9c02d043c264be821231d95462b08abc327ebd7c1f2aab662feb0b09",
+        "nonce": "ad913d4954749c77d9e54814914a9c4f",
+        "timestamp": 1769712161,
+        "helper_data": "91d4a9a6e0ec8bd3",
+        "hmac": "08057d626810d305c62be4307ea602a2be703a5f636e6f72c744a32f1f2c9679",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "5e07083c",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            44.67,
+            40.59,
+            21.17,
+            20.66,
+            23.26,
+            48.14
+        ],
+        "quantized_snr": [
+            3,
+            2,
+            0,
+            0,
+            0,
+            3
+        ],
+        "session_key": "050acc97c7f40a5ace2c8b74ccf86ff4f34f4009449d7e5127d82078759ceb6d",
+        "next_session_key": "fdac43aaef49d4973e34194ee0523acc78b7fd6504345177c498a9b15cf7b70e",
+        "nonce": "dbdbd3fc1cce51d21a40356e56f7e53e",
+        "timestamp": 1769712164,
+        "helper_data": "febb79ace27977fb",
+        "hmac": "5022aef0056b2034aad7abd93131c8a9cf2ed673aa4b46689b9bbb9e1561fa04",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "ddf7b964",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            31.71,
+            39.7,
+            46.24,
+            23.01,
+            37.59,
+            23.87
+        ],
+        "quantized_snr": [
+            1,
+            2,
+            3,
+            0,
+            2,
+            0
+        ],
+        "session_key": "bf7bd0d3aafc4ac33c7c75a165ab9bdc40b726dbd962d9d1223c5909979d7266",
+        "next_session_key": "1744114b3797e15708ecd5e2feeb1abe219d04c3d4becc8badbfcbfeab26e770",
+        "nonce": "3b5ccea81424f60c5567e4d5342487e6",
+        "timestamp": 1769712169,
+        "helper_data": "4ff9a5cdc4b1b0a6",
+        "hmac": "506f5c1e7c43f0abb960c399ef6b541d385811375c98f268f34d35d3a140be7b",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "348fdc8c",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            27.57,
+            41.82,
+            30.49,
+            38.05,
+            48.0,
+            39.68
+        ],
+        "quantized_snr": [
+            1,
+            2,
+            1,
+            2,
+            3,
+            2
+        ],
+        "session_key": "b82e1a057504d7f38af895051e17254c48c6f612627f3228ba01f2834e39ee7c",
+        "next_session_key": "25fb920520679680d8f908c23aad53977c71cf9a46c2941579ac5f19dfc916a1",
+        "nonce": "54e172f7af1cecced0ac814119c91880",
+        "timestamp": 1769712192,
+        "helper_data": "cff0797b4ef0cb6c",
+        "hmac": "d7be7ef339852dc1689e35b3ea44692477e470827072dd9e62eccdff1f9f0499",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "bb4e794f",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            32.6,
+            38.85,
+            42.56,
+            47.26,
+            30.99,
+            37.39
+        ],
+        "quantized_snr": [
+            1,
+            2,
+            3,
+            3,
+            1,
+            2
+        ],
+        "session_key": "0424c58da6f5c46acab1d937870a770b29a1a8f1b967ce2fe325615304aafa7a",
+        "next_session_key": "0827f9dc2f3cc1a6a1ba807bbd5573b2e04d1bdd4d462b2b004fd2b0a090621e",
+        "nonce": "9bd2f083bd91af9e666b90004fececaa",
+        "timestamp": 1769712565,
+        "helper_data": "997910bbe9dc5f75",
+        "hmac": "497bf48d4d08c558ee49fee54e73b9bf1ec160e1dc055e94fc2cd8b16d940512",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "0c1c9ab3",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            26.89,
+            28.86,
+            36.19,
+            36.89,
+            48.96,
+            41.16
+        ],
+        "quantized_snr": [
+            0,
+            1,
+            2,
+            2,
+            3,
+            2
+        ],
+        "session_key": "07bf4ec43b7455e94b116af34532c5ac84f8eaa4244c2ad446001e38d72f221b",
+        "next_session_key": "5bd6b6cfd48c48d19fa3daa5564e7b5731b0d8df02ecb57b4aadf5c739346467",
+        "nonce": "ecf28a490157d5bc3484f78ca1653290",
+        "timestamp": 1769712781,
+        "helper_data": "be1685744d82269f",
+        "hmac": "5186f39b9d4a2de2d8a18a0182c65afd23920c66a35985effdb08f588de02017",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "03358241",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            20.49,
+            35.8,
+            33.43,
+            37.32,
+            49.71,
+            21.34
+        ],
+        "quantized_snr": [
+            0,
+            2,
+            1,
+            2,
+            3,
+            0
+        ],
+        "session_key": "0735b4380594f36a469349afa243ab96cf3cf19099162124f75aafaf18a6b3d0",
+        "next_session_key": "4bb1274f875ed7b10767ee34f3fee3c48024f0094f9fd502b9a3563367053de3",
+        "nonce": "c4b67f3a14be8468fd8a84bdcaaa25b4",
+        "timestamp": 1769712999,
+        "helper_data": "e3f0e0f4a7ea0822",
+        "hmac": "63d701bdd69ab51a62bacf17a5f16e0ef962c00fad32cfdb5e948df9ba730d9a",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "2b494f09",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            35.7,
+            25.13,
+            25.6,
+            29.2,
+            20.29,
+            47.11
+        ],
+        "quantized_snr": [
+            2,
+            0,
+            0,
+            1,
+            0,
+            3
+        ],
+        "session_key": "75b91da0271a787ffceecc7a488747372edfa1fcde7da77c8fa573ec6d3372f6",
+        "next_session_key": "12cf4b9c3e977bfcdc73ba04cfdfd758e373fb8756ae522cdc28e30854532b3e",
+        "nonce": "6ea20a133bc8c2b9821475ed34fb98dc",
+        "timestamp": 1769713002,
+        "helper_data": "ae9040157e4021ef",
+        "hmac": "67c34a80b3b83cd53a2e20fc8c33af87732886ad6b92021e731705eef278c729",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "66b00202",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_D",
+        "snr": [
+            22.44,
+            28.61,
+            33.96,
+            49.1,
+            46.6,
+            34.14
+        ],
+        "quantized_snr": [
+            0,
+            1,
+            1,
+            3,
+            3,
+            1
+        ],
+        "session_key": "fc565e031827239c5ec005d3e45391bfb896ab6b0c328b39ca389f531eaf5b77",
+        "next_session_key": "68c44a62f2a8804295c69d88525f5419498f7b89a32d656737aba0f20e155b79",
+        "nonce": "b3e7e89a8da6a115a44bbaa8a76f03d7",
+        "timestamp": 1769713012,
+        "helper_data": "81a7f2d0a945682f",
+        "hmac": "d9ccb316fdaf053580ec619d498f1fb7f7deeb5ce65c790d6da9f93121006cb9",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "d54c0746",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_D",
+        "snr": [
+            34.81,
+            35.8,
+            35.86,
+            40.38,
+            44.08,
+            26.6
+        ],
+        "quantized_snr": [
+            1,
+            2,
+            2,
+            2,
+            3,
+            0
+        ],
+        "session_key": "75436e56fa2630ab78b1217fa5874695a5e750e924bc30c1340f8f59baa11f5a",
+        "next_session_key": "357679a2f029dd542fc7b827835254c4a03cadede06cfde183c62c61d758bab5",
+        "nonce": "5bfefe0d65fa083ecc0040a1c4c5f289",
+        "timestamp": 1769713016,
+        "helper_data": "fe3928be1dfffdda",
+        "hmac": "d72980d2cc1975882d17bb57742b8223ce91a608510a787bfc9615d7b0a3d404",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "0c70c063",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            42.75,
+            20.09,
+            27.53,
+            21.11,
+            36.06,
+            47.39
+        ],
+        "quantized_snr": [
+            3,
+            0,
+            1,
+            0,
+            2,
+            3
+        ],
+        "session_key": "101c5d9215cfcbd104bad83d547aabff26126b0734e9a3af2e5ae31ff55ae5a4",
+        "next_session_key": "2452cbab93c507d571076aaad5d918db498c7d971130e971d69d775c83aa8561",
+        "nonce": "66edc20e69a1153eaa8e8de72b776276",
+        "timestamp": 1769713140,
+        "helper_data": "15ca69f9801dfbf3",
+        "hmac": "1e24b5213c55dd65f947e623149bf827700e22c24a05a4d3bd87958ea7b3ebf0",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "4160f8fd",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            23.73,
+            36.07,
+            37.15,
+            44.58,
+            44.84,
+            47.36
+        ],
+        "quantized_snr": [
+            0,
+            2,
+            2,
+            3,
+            3,
+            3
+        ],
+        "session_key": "bb04a641a04c6b96447f8c7a550b98a93c0663bff045d65a7ec0438add673b68",
+        "next_session_key": "4efd714d65922bd45f2d3ea9d04a7b5210d9054650d59d70346ef58d329f75a2",
+        "nonce": "9a2d6b08775868f2ab0a815a68f406b1",
+        "timestamp": 1769713383,
+        "helper_data": "2f29e907118c78e8",
+        "hmac": "cf13022d53b70783f6fc8d93cfb3a7ff6a458eb103a26da2c7864d68b12fbff6",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "0347cf79",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            28.78,
+            27.93,
+            29.55,
+            42.38,
+            44.21,
+            30.49
+        ],
+        "quantized_snr": [
+            1,
+            1,
+            1,
+            2,
+            3,
+            1
+        ],
+        "session_key": "112a6f2606940a587cb3e73a85d6cb27e7f54435d34abfbb1670b3d3ea6f9f3e",
+        "next_session_key": "a19901c5ea9855fd676836bddc814ac07fc79ae35ddb048ce731e273058d0630",
+        "nonce": "200878a5af247f301f6dd194d485d60c",
+        "timestamp": 1769713711,
+        "helper_data": "cf64d419c3540394",
+        "hmac": "d157ac0c91d610ec9651921af175218303f613d00ef3205518c7b83a1ab73cf6",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "ea9cc222",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            29.03,
+            42.76,
+            41.03,
+            35.78,
+            48.87,
+            45.16
+        ],
+        "quantized_snr": [
+            1,
+            3,
+            2,
+            2,
+            3,
+            3
+        ],
+        "session_key": "e6ea890721890c9c3114e88640d725009dfd93bffe6b592dbecb3454e1632f84",
+        "next_session_key": "654d570cc44a6e3feb18dbd35cb04ec0a8c58472dbf761de22b0986bc2200d61",
+        "nonce": "446603698baa7192b803d12cb22a4dfa",
+        "timestamp": 1769714271,
+        "helper_data": "b1605ad13123164e",
+        "hmac": "bd1acf3a207c3001d926064929dc4f569862d078ce7d0c02cb6e4c4f968506ff",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "d51ed18e",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            29.03,
+            33.08,
+            20.48,
+            27.73,
+            41.85,
+            25.4
+        ],
+        "quantized_snr": [
+            1,
+            1,
+            0,
+            1,
+            2,
+            0
+        ],
+        "session_key": "c2c2955eddc25a3b92fc9276cb098105d54371c5c6f3a85e90e062636246d2a0",
+        "next_session_key": "3747e43e991af916fe92f3290980f4cab0e780af8442ad18943e25576ccd42e1",
+        "nonce": "4b7a38dc1aa555112b1b7c121ec7ec30",
+        "timestamp": 1769714310,
+        "helper_data": "8ccac7d5438230a5",
+        "hmac": "1e8d9b399166faa47aed70d022f261d997870ad0ffe07abe212aa0090ab113ef",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "69fad093",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            40.45,
+            45.76,
+            26.33,
+            28.31,
+            43.23,
+            27.09
+        ],
+        "quantized_snr": [
+            2,
+            3,
+            0,
+            1,
+            3,
+            0
+        ],
+        "session_key": "bec08b1b51eda87ac2fff03b64f296aa74cbde14d565e03973ab53662016291c",
+        "next_session_key": "f27aae77af33ceabf591b866126af34a34105f009082a830f920267d2e326d85",
+        "nonce": "de603b88563bac1c98993100553adb51",
+        "timestamp": 1769714593,
+        "helper_data": "58b87d203ebd3786",
+        "hmac": "9de7d6316a6e2ee2b7942bfd9c97353cbe16de536eeb13376dd09e0b107fe952",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "bef09fb3",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_D",
+        "snr": [
+            44.91,
+            21.54,
+            23.74,
+            36.86,
+            39.09,
+            22.32
+        ],
+        "quantized_snr": [
+            3,
+            0,
+            0,
+            2,
+            2,
+            0
+        ],
+        "session_key": "a0cce6bccda56c7ed4f804aa38e74c532b53921796d3954dbcf4e1e29347e2bd",
+        "next_session_key": "bc784f041edc0efbf36e256d86a3853ab87b0f6f2e9bc4479013a665ffe873fe",
+        "nonce": "fd10b74275a4656bc04460d5420ac3f9",
+        "timestamp": 1769714598,
+        "helper_data": "72d05373bfb384f0",
+        "hmac": "2667ef82ab76e4b6c049ea015c561a47abe813985195cff3ca0d1d71d21f4fc7",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "b355a9b9",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_C",
+        "snr": [
+            40.42,
+            46.17,
+            49.34,
+            43.57,
+            29.13,
+            37.05
+        ],
+        "quantized_snr": [
+            2,
+            3,
+            3,
+            3,
+            1,
+            2
+        ],
+        "session_key": "f0a4ee2ca327f9932d08e16de49b3ab983f29426ccd848ac158ee97da5bb94ad",
+        "next_session_key": "e665bbb15232427c41cad79ce3767a517d230199cac954df02e6f0efc593120b",
+        "nonce": "5de079ec373238af707a585b0133f0fc",
+        "timestamp": 1769714613,
+        "helper_data": "e91820c54936235f",
+        "hmac": "7e393ed814e5690a1d2c914c1a15f79266116a092f6c7af24ce2eb9caf2053ce",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "278ea16b",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            22.31,
+            28.2,
+            33.51,
+            22.64,
+            32.49,
+            49.07
+        ],
+        "quantized_snr": [
+            0,
+            1,
+            1,
+            0,
+            1,
+            3
+        ],
+        "session_key": "97036808e681fc3d60353a1464b6f4d12597d41a29ee9398afba93d61a27196b",
+        "next_session_key": "3175d61b2543f836d7a0635e872dc512fbc7205695a8b2bd30ceef0e063f1b49",
+        "nonce": "fbd6f41430539a8d31684eb4e476b784",
+        "timestamp": 1769714705,
+        "helper_data": "09d04d785407a331",
+        "hmac": "4098482f225838dd4b4025ed899ac3522270ae2ce6e1d6a872f872bfb56eebea",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "1a03a86d",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            21.54,
+            31.69,
+            31.62,
+            26.74,
+            30.48,
+            20.52
+        ],
+        "quantized_snr": [
+            0,
+            1,
+            1,
+            0,
+            1,
+            0
+        ],
+        "session_key": "eb9659b2ca2f4e70f1f9ad914c7a5952350e9fb416c5cbe1c954c48e31bcd64f",
+        "next_session_key": "9847262a605b99e7671fa87b5caee972ba7637525f66416d944228ef3f03bb0d",
+        "nonce": "dbbea848b6c322454dc49eac521c67c8",
+        "timestamp": 1769714752,
+        "helper_data": "2852e7ded1f8eb50",
+        "hmac": "cc470e7cf4cb31fdb90d83a86b840ddf31978f80584f5e3f091f20f0f002b144",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "2a08adc4",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            37.0,
+            25.07,
+            22.06,
+            23.09,
+            33.99,
+            26.64
+        ],
+        "quantized_snr": [
+            2,
+            0,
+            0,
+            0,
+            1,
+            0
+        ],
+        "session_key": "ae2b8fc32ac1b3666aba39d4d4a9316f3813352f01e6b6e63ce7979a715d33d2",
+        "next_session_key": "16fb88390aa77fb702ba3be8ad15a02c864a56ce6251f963ac8d03e5bc3b439c",
+        "nonce": "03cd4e221816bc95688b955f4ead1ddf",
+        "timestamp": 1769772217,
+        "helper_data": "0d3f8d0a254b3e0e",
+        "hmac": "1b26361590e6498ef8a99a2758ba31b92b25a7cfa2b1af371e2d8f534f55557f",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "6f5bc755",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            29.9,
+            48.05,
+            49.95,
+            33.24,
+            44.52,
+            24.8
+        ],
+        "quantized_snr": [
+            1,
+            3,
+            3,
+            1,
+            3,
+            0
+        ],
+        "session_key": "a0dae5fffb58618d81f76fb5638050155a73770ec4ba9a1c156ff387266982ef",
+        "next_session_key": "ed332801d708a93e3f2739207d42851ea845798d4696589c4bb50a352a107681",
+        "nonce": "e3b35200e385a595d1a928ea768329ad",
+        "timestamp": 1769772284,
+        "helper_data": "77fd83c5d143ed16",
+        "hmac": "ef2ec87c6e7c14fd5947c3cd67837c61ae127066240d26714e00394f7a8b8007",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "3720022e",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            22.12,
+            43.8,
+            34.53,
+            24.02,
+            37.34,
+            44.57
+        ],
+        "quantized_snr": [
+            0,
+            3,
+            1,
+            0,
+            2,
+            3
+        ],
+        "session_key": "b5b3c04af61291f1b0f278b6ce1d8d04c9a4e799f3fba0234d94d445c3800ea4",
+        "next_session_key": "cb5e043d4e32cf0631d97979cdcee0a3cb526ac00855d8ef228830152a07b515",
+        "nonce": "35b6a3c48d12748d79cce9a12faf86e5",
+        "timestamp": 1769773424,
+        "helper_data": "8f7a823d7c4f4149",
+        "hmac": "e2030560a7fe88ec2be87a0b295249e3e53828a6a8fc84e14fd51c307e360e1c",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "f09eff09",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            39.61,
+            22.07,
+            23.79,
+            40.59,
+            48.04,
+            25.88
+        ],
+        "quantized_snr": [
+            2,
+            0,
+            0,
+            2,
+            3,
+            0
+        ],
+        "session_key": "a6ea7bea380274e98b98bc64cb1d84eb0a64559263c6f85b8f2642bdc1c313da",
+        "next_session_key": "3a64e33761e91967b1249019c6206647a1244ef0d5f8286b69da35f09c7a0baa",
+        "nonce": "911bb7f69879cfdd18430dc987fb76a2",
+        "timestamp": 1769773740,
+        "helper_data": "2e101aa04366472c",
+        "hmac": "81aa0fb908e6f70cb06b6658cea636c4b7b0fe02070e3a449f7addc48724fdab",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "01226194",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            46.31,
+            45.56,
+            30.42,
+            44.56,
+            25.1,
+            21.31
+        ],
+        "quantized_snr": [
+            3,
+            3,
+            1,
+            3,
+            0,
+            0
+        ],
+        "session_key": "2411f0def78067f037b05092be55d6f297b8d3bba6bdf02622b27436b7a5d431",
+        "next_session_key": "198dbbdc66740413de2b8323802c42a69a870910b7c33afabc66266c49f14522",
+        "nonce": "acc2e0893143b29b5f623bfca2684a05",
+        "timestamp": 1769774941,
+        "helper_data": "db090a3f15948c3a",
+        "hmac": "6d9f8e366eaf1eb66b528ea710eebbc326974aeaf5693492d8ce5e41cea6181e",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "ab28f3fb",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            40.64,
+            26.09,
+            39.28,
+            34.21,
+            41.68,
+            46.12
+        ],
+        "quantized_snr": [
+            2,
+            0,
+            2,
+            1,
+            2,
+            3
+        ],
+        "session_key": "4ca7544c13e142aee7c72c8ee64b3b4df21c96522dbaadbf7d4562ed80443fed",
+        "next_session_key": "6888d1d68c428a19a3b7ba11ba6d2d7ef5e88480fefcf9b36e3685625db96cdd",
+        "nonce": "eff3d775f47accf4ba5fbd0ac0634730",
+        "timestamp": 1769774956,
+        "helper_data": "b29934f04ae94513",
+        "hmac": "9a9c53f56d70ad9b00144efb8372ea283c3dae96d9663ec5d78ae3aabfa349e5",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "30e952d1",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            39.48,
+            36.7,
+            20.47,
+            27.84,
+            38.79,
+            48.78
+        ],
+        "quantized_snr": [
+            2,
+            2,
+            0,
+            1,
+            2,
+            3
+        ],
+        "session_key": "e245f532bfad31836dc16e262bdff3cc83f13b4010742d6808cd4f2208d79a9d",
+        "next_session_key": "bd9dce56c3a37c1498468aba6e4717e9095986e7d52528dd2df4f1966820493e",
+        "nonce": "0869c4d7bb24e808a802e99b1006e046",
+        "timestamp": 1769775215,
+        "helper_data": "084c0547b55a5910",
+        "hmac": "0adc73658bc2ab47945a79039f900fa791a547ad100b6f0ab46ef32dc48a8878",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "d99af2c9",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            45.67,
+            32.39,
+            41.16,
+            24.15,
+            37.89,
+            45.08
+        ],
+        "quantized_snr": [
+            3,
+            1,
+            2,
+            0,
+            2,
+            3
+        ],
+        "session_key": "c05d1563fe482bc96f5aef27e60348130285946c2d227fe666f75aecf1e72b6a",
+        "next_session_key": "5b98900ee589c18354a2a3120828a37b6ffc0b3b828f702bd787b1fb834495b3",
+        "nonce": "e68e15cc56c70f3a3c9cefe0aa7feeb5",
+        "timestamp": 1769775490,
+        "helper_data": "25b949bfe2b86695",
+        "hmac": "534b37c649eac807f87685b813e5a2e7bf9cb5cccd2c0296e560ab3383d1b004",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "c6bb8cea",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            34.35,
+            44.31,
+            48.88,
+            29.79,
+            25.05,
+            35.02
+        ],
+        "quantized_snr": [
+            1,
+            3,
+            3,
+            1,
+            0,
+            2
+        ],
+        "session_key": "ed364603c3ee6d9cb8558e7f65636ef065fc211759c6e27aa29f4177532116a3",
+        "next_session_key": "b50da5fe326574af62748965d3972cf69976239c65c866b3725c113b4a26509a",
+        "nonce": "bd31f623958dc4196a4089b403bef91a",
+        "timestamp": 1769775496,
+        "helper_data": "6850c5a3932d2136",
+        "hmac": "91e029c4dbeaa0ecf274ad0f18eb460a759feb403953c40276cac403a2b1bc9b",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "8a91702d",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            20.28,
+            30.05,
+            37.09,
+            22.79,
+            48.98,
+            29.73
+        ],
+        "quantized_snr": [
+            0,
+            1,
+            2,
+            0,
+            3,
+            1
+        ],
+        "session_key": "961393bc6cc27e59c918b3fcb0833b4e51c6e52e43bc359cca45601464bfde4d",
+        "next_session_key": "c71f8b296459c699adf822e5bc8ae877f1289ee3c23d329de86f48c371ef00df",
+        "nonce": "0930161fd4502a380f9a9ba5163b41bd",
+        "timestamp": 1769775655,
+        "helper_data": "5e16283ae2100807",
+        "hmac": "5cae970a3879fb3d38697fe05b157665374ad6dd6834aa1e4b54968d8ef26dcd",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "42fe8e66",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            38.86,
+            22.35,
+            28.06,
+            43.32,
+            42.08,
+            23.08
+        ],
+        "quantized_snr": [
+            2,
+            0,
+            1,
+            3,
+            2,
+            0
+        ],
+        "session_key": "75bd33589b9d51b7fb8e014a3e90657d40916f0bc050e2d0d6d7ffd29951aaf5",
+        "next_session_key": "42dd94c79ccd57441f34c7e2c2a524d9f989cffeb7b302f1a8b2fd1b6960a59f",
+        "nonce": "4d3b4a16fe5cd1e7e494fb1b9e3e8e4f",
+        "timestamp": 1769775927,
+        "helper_data": "4d4119914f1f29c9",
+        "hmac": "bdb47081f28b3b11d8e01bc467461a79dec83ea9a10531987d590ba596f2f62c",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "a9606466",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            42.03,
+            21.13,
+            33.36,
+            23.41,
+            27.05,
+            33.2
+        ],
+        "quantized_snr": [
+            2,
+            0,
+            1,
+            0,
+            0,
+            1
+        ],
+        "session_key": "386a0d32483d943a90b2ead8a2fb412e2a42c428008890698edcb9442ebcf263",
+        "next_session_key": "ec063420edf256921cc0c2be5eab49e401564dbfcb4fc9dd0af00f6f3aee8233",
+        "nonce": "14741f3c4cb0b11eec8a7b4d0cce84dc",
+        "timestamp": 1769776141,
+        "helper_data": "c83dfc3cedcbec80",
+        "hmac": "6a5ae5f2d3d83b776d279666ce4c90166ecbe6479e0691218e247db0dadba07f",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "68e2a595",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            20.58,
+            44.03,
+            44.39,
+            43.44,
+            24.73,
+            46.63
+        ],
+        "quantized_snr": [
+            0,
+            3,
+            3,
+            3,
+            0,
+            3
+        ],
+        "session_key": "ca2b40d73037fbee7c07bd3ab1b3d36993df3108c02e69f1aadc70ea7dfeae4d",
+        "next_session_key": "ee43b560d9d7b7f1370f001c76fef95d7133b8077a0f3132c56dabb94dcd3d5d",
+        "nonce": "8d4db36c9cfece7e18e8fae730db0369",
+        "timestamp": 1769776625,
+        "helper_data": "3a60db9583ab8446",
+        "hmac": "9e0599e11749d7db21c6e0e0c1bbd757bb95392bb4c7dc2657bcd3f3d4e68009",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "23bc97dc",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            30.26,
+            29.28,
+            20.26,
+            33.37,
+            21.63,
+            37.67
+        ],
+        "quantized_snr": [
+            1,
+            1,
+            0,
+            1,
+            0,
+            2
+        ],
+        "session_key": "e82e3a8ec3789434d5eb4205ed61f437d9cba4a144e38f3ca6ee9dda14552592",
+        "next_session_key": "519cd842b9d30b1fb00c778246bf13eb506c7ff7bf3d534be0ef22c9603f6078",
+        "nonce": "8aa37284180ede7d5df37fa2131034f2",
+        "timestamp": 1769776630,
+        "helper_data": "9abe3fe1861b0579",
+        "hmac": "0a49d4ec5cb1854c64f642032f74757a417d72d400691496d956f8e0708f5801",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "f98f86f1",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            44.73,
+            36.55,
+            33.66,
+            38.13,
+            24.11,
+            39.78
+        ],
+        "quantized_snr": [
+            3,
+            2,
+            1,
+            2,
+            0,
+            2
+        ],
+        "session_key": "48740e6241a27db3127014e513f5d47e3c3701b3dbc6d8029a6b88f9b693ffd7",
+        "next_session_key": "3d1ac828679e736281b4015b026d9715edbaa5ef6bac91f03c0ce432943a6950",
+        "nonce": "adba3894453b74b071a3b9ceaf211485",
+        "timestamp": 1769776998,
+        "helper_data": "352eda47c5bbc171",
+        "hmac": "209b54efb0ba234a25f87af386f25bc275f02232f483bf03ac5a19977fa3eaf8",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "3edf3a39",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            44.71,
+            25.07,
+            26.67,
+            44.42,
+            20.94,
+            32.14
+        ],
+        "quantized_snr": [
+            3,
+            0,
+            0,
+            3,
+            0,
+            1
+        ],
+        "session_key": "1fa7d2198ec166adeaa0f0d7fbfcd328e2246acf90025ea238a0e2034528c9e3",
+        "next_session_key": "1637f3beefbbceba8c9dce2ca6ce156e5c76b509ef70ffc0e41f8dacbdc4c632",
+        "nonce": "a4277a99d5be316b21c83700f0a32558",
+        "timestamp": 1769777206,
+        "helper_data": "f561cc84c3ec6e68",
+        "hmac": "17170cf024ad4703736402b4e5b6e2ddd10c5336fddd9b776eb774853c22d777",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "06ff1d42",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            29.84,
+            24.13,
+            27.26,
+            33.9,
+            29.97,
+            38.06
+        ],
+        "quantized_snr": [
+            1,
+            0,
+            0,
+            1,
+            1,
+            2
+        ],
+        "session_key": "f5ffd4834c0bc1ff3e6ad8bb41315b090dda37c0ab8305cbc4e795ff91a6e17d",
+        "next_session_key": "c688ba552f45824e4dc5a6bff8dfd1e3fe32cb53813e6de021fc2c5ec222f652",
+        "nonce": "da23ec72eea9a94c59bcdfb642b4714b",
+        "timestamp": 1769777434,
+        "helper_data": "c059656fc15825a3",
+        "hmac": "2ace36574c110cbb83bbb0bffea289f1894ac5b14822d44434af1e8d5c62a322",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "da9a15b7",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            41.45,
+            25.84,
+            31.46,
+            36.74,
+            38.85,
+            32.36
+        ],
+        "quantized_snr": [
+            2,
+            0,
+            1,
+            2,
+            2,
+            1
+        ],
+        "session_key": "b0c9d958d58ef477293a8a427b0acc57894259e29526b54c27c88cb9a7b07026",
+        "next_session_key": "b91ca56c8c8ddbb6a6a5d0454d1c116d3f0c0e4a0f85b23d0936e2a72b5cfa7a",
+        "nonce": "6e6c9ffe14d11206f8c8ec1a4414b156",
+        "timestamp": 1769777793,
+        "helper_data": "af7164278c96655b",
+        "hmac": "1d9f089fd24eb7cae02bafa7fe7f7ae91e1cc3b3ea6b06799531bdfcf8c9e6d5",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "4be18377",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_C",
+        "snr": [
+            39.52,
+            40.75,
+            24.55,
+            39.5,
+            43.32,
+            28.08
+        ],
+        "quantized_snr": [
+            2,
+            2,
+            0,
+            2,
+            3,
+            1
+        ],
+        "session_key": "a1b8289acbfb36c2601dfea1c3ee0f773a99d00efea093a58e74bd1e48679c61",
+        "next_session_key": "176202894fdbff05a6731e26f1788319697d36451524bff0ab87801dc8b16be7",
+        "nonce": "72548c10c568f5c908f16511e0b96d9d",
+        "timestamp": 1769777850,
+        "helper_data": "658977c90bdb5ff6",
+        "hmac": "71f86ada804d71054208827f004fc1c1036a7e957f139788ac939748751f8958",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "a162d765",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            31.3,
+            27.91,
+            38.88,
+            32.49,
+            24.8,
+            45.13
+        ],
+        "quantized_snr": [
+            1,
+            1,
+            2,
+            1,
+            0,
+            3
+        ],
+        "session_key": "3fc5b7623bd3e198add03913036ea6d25200399ec9919368bb992706aba616ca",
+        "next_session_key": "b5c84f6cbaf99441831af3319b47e17edada643be5a66c6b3c9fa95c60114515",
+        "nonce": "9c4fa3876ed41b590aaf4696c9c70b04",
+        "timestamp": 1769778106,
+        "helper_data": "671bde3f2bb849ab",
+        "hmac": "69712369b32a51b001383b2da64e530704b7c506f4bfb5b07f0ac96251782e4c",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "bdd5dee9",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            45.77,
+            30.96,
+            44.65,
+            28.25,
+            35.63,
+            35.16
+        ],
+        "quantized_snr": [
+            3,
+            1,
+            3,
+            1,
+            2,
+            2
+        ],
+        "session_key": "8897ecb4d6bf0c692976e591f8ee48acd85cfcc70e2b2d2e04aa61e4a4ae7cd2",
+        "next_session_key": "5e1660a31c25d6f64d10e49a4212db80b8848fb0353e964ede4920fd8162f26d",
+        "nonce": "7cc2e9bd770cd3085d1f4458237bd8ae",
+        "timestamp": 1769778444,
+        "helper_data": "8ae09b683631976e",
+        "hmac": "d492c2ab9107ecdfaaa201febb015963b6500bf34f26cec4c1da5b8a3729db0c",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "7fb77938",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            29.32,
+            37.09,
+            26.11,
+            26.37,
+            40.4,
+            37.77
+        ],
+        "quantized_snr": [
+            1,
+            2,
+            0,
+            0,
+            2,
+            2
+        ],
+        "session_key": "86f70d3df43a60a6bddb87075f0b3707fb727ae23c5db6c781da6398b21f7738",
+        "next_session_key": "586300c5c2cea6901d2c93c8076d694ad87993624d150513c9e6b7db2d06d4d5",
+        "nonce": "20d1c651197416df060006eff704b9f6",
+        "timestamp": 1769779040,
+        "helper_data": "da14cab706709af0",
+        "hmac": "0b677d46fb8f890739baec7de0b0f8f0f0bce1a8c68d05216b1739049279897f",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "e8b2d036",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            44.29,
+            49.51,
+            43.65,
+            46.0,
+            24.8,
+            21.23
+        ],
+        "quantized_snr": [
+            3,
+            3,
+            3,
+            3,
+            0,
+            0
+        ],
+        "session_key": "121f260eb6d8cc20d60866e9b08939af62eb930e694e43eefdc8f9313c4094a1",
+        "next_session_key": "49c3525719c33c4dd074b028d8e305ff8523a8ee91a60f5778eb6935c5888c6f",
+        "nonce": "3e51ba654df9b348bc382a4aa0b17a86",
+        "timestamp": 1769779835,
+        "helper_data": "918cf6ed651a1687",
+        "hmac": "0d923e823e9e30c274925d0527c1a8addcee887afc38caef4beb1e9df09b6c74",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "32838363",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            27.81,
+            29.62,
+            26.89,
+            40.56,
+            41.73,
+            40.45
+        ],
+        "quantized_snr": [
+            1,
+            1,
+            0,
+            2,
+            2,
+            2
+        ],
+        "session_key": "8458d6bebf7b4b25bf27282efc4954b63d036f5644a3bfc7fad495edda47e1db",
+        "next_session_key": "261cc5daf56528fe35e00979699494a8f04c602763dd33171b4707e290246fef",
+        "nonce": "678e247ab311f5f1e70530cb60f11adb",
+        "timestamp": 1769780186,
+        "helper_data": "1b418623567cec7b",
+        "hmac": "9b428a42beec224eb9cb2c0adb4849212b72bdd28961218d33999587c70704b9",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "df62f51c",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            31.83,
+            25.47,
+            24.74,
+            24.32,
+            43.37,
+            36.84
+        ],
+        "quantized_snr": [
+            1,
+            0,
+            0,
+            0,
+            3,
+            2
+        ],
+        "session_key": "41459df5748ade09e54462f17865578644b6231c4159481800e77e2488a46374",
+        "next_session_key": "59c716748c0ba5003d0dfd87f4dbde58c3fddcefe8c94db567a5560e963dfc6c",
+        "nonce": "9c485f1dcfacdd7c720e33d4a84e4024",
+        "timestamp": 1769780191,
+        "helper_data": "0c1e1f0af263ab19",
+        "hmac": "8777d487878baaddcb25f40df9fb694384a8c20264b62b036b35548a9eee48a8",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "e65f960a",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            49.67,
+            49.84,
+            46.1,
+            42.71,
+            25.94,
+            37.77
+        ],
+        "quantized_snr": [
+            3,
+            3,
+            3,
+            3,
+            0,
+            2
+        ],
+        "session_key": "71d0093e40ae0bcfa78c18021c556b5f7a7111abf936b76d1416d00ba1996896",
+        "next_session_key": "003571ba0279727a357bf1e19e3e808a2c79912520e09e0d34daebd68528b7be",
+        "nonce": "6012f2c02019ab900508b5617224f6e6",
+        "timestamp": 1769780203,
+        "helper_data": "572dc697e7603719",
+        "hmac": "207558f12e0ee1c7b16fd37dbe71ab1586cad3ec7ed6e159eb3b635eb1c0a9d1",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "a9bcca70",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            37.72,
+            46.14,
+            30.65,
+            41.93,
+            31.39,
+            27.74
+        ],
+        "quantized_snr": [
+            2,
+            3,
+            1,
+            2,
+            1,
+            1
+        ],
+        "session_key": "622db134a696a0278600d86f1f2d0789eef704859657b0a4917496f2fe08d54c",
+        "next_session_key": "67d0deac7e1a3be9aa93507e512542d8edeed8a2250838878783000272514fa1",
+        "nonce": "56b6ac7a8d5caff4adef993a28da41c3",
+        "timestamp": 1769780231,
+        "helper_data": "7239a2af648b9caa",
+        "hmac": "d9462d0356f630f1ef3efbadeca427dd22e7eaf585b21ae723c3f83d21a7eccb",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "3f08b229",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            34.49,
+            46.49,
+            39.48,
+            30.28,
+            47.32,
+            36.79
+        ],
+        "quantized_snr": [
+            1,
+            3,
+            2,
+            1,
+            3,
+            2
+        ],
+        "session_key": "9dc75f0f317665338d721d4dc9e3dcc1e3f7c05962e49a593c670ae0f4b94245",
+        "next_session_key": "30dd8bef3c3e0dd42c12a5f1e340de03179c759f1143370061f5642e29a284bf",
+        "nonce": "8e5c02c3e06ac694bf26fd7ff1b4afd6",
+        "timestamp": 1769780577,
+        "helper_data": "6b20f401b1f285fd",
+        "hmac": "a32518f277a6d2e4f3fda03e833f45ab73ada19ad42f1a903f5e9c8df11935f9",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "3282c622",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            22.36,
+            36.41,
+            49.05,
+            42.12,
+            23.52,
+            47.66
+        ],
+        "quantized_snr": [
+            0,
+            2,
+            3,
+            2,
+            0,
+            3
+        ],
+        "session_key": "d8d4353f892f5c14e561756314d57e8b2990330463ced60e54a7a3d4438e870d",
+        "next_session_key": "5792cd2b9ae9625a99c1750913c3d2fba5642b5e015e6c8eadb0cf57d3d15120",
+        "nonce": "ecfe880e91f29b0550d5649518d1d867",
+        "timestamp": 1769780607,
+        "helper_data": "10dc585f743e1e2a",
+        "hmac": "41aa81de72a197edf733a4272e7aa78078278e53b6798fc5f97f798c648b46ed",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "b9e900ed",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            26.92,
+            48.04,
+            37.6,
+            28.49,
+            31.43,
+            24.23
+        ],
+        "quantized_snr": [
+            0,
+            3,
+            2,
+            1,
+            1,
+            0
+        ],
+        "session_key": "ec049b0ae53ce416976b552119ed44fd63818891526c1464b8a20c5ff237140c",
+        "next_session_key": "777926747f681db683bb0e8dfd510f314163badd718bcfb75d18d5b6cc490427",
+        "nonce": "6a191c186cd923a3c5b20031b3352567",
+        "timestamp": 1769783478,
+        "helper_data": "eeede919c9dcb525",
+        "hmac": "29008de55b7b508ad891506aa0ae44a06c579b2fc427b8d2c4ea8f70bbe39aa2",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "e7d85596",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            31.09,
+            32.64,
+            34.89,
+            34.95,
+            43.89,
+            45.34
+        ],
+        "quantized_snr": [
+            1,
+            1,
+            1,
+            1,
+            3,
+            3
+        ],
+        "session_key": "063d94056ebeeee01c51ce70a70e22618d6f1e42f751dbea212ff2e890e85eb0",
+        "next_session_key": "7c98492eba06bfdff613cc900ad56dc59606a89cff04b9ce5937514ad6751923",
+        "nonce": "f64ffc0bb5c0d3cf33b741b4bd58f30e",
+        "timestamp": 1769785322,
+        "helper_data": "b09f9cd220536da9",
+        "hmac": "679e00e5b23c79f058794489dfebaa02ae58da13082565e13535cf5766f13a14",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "98e4c7ed",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            38.57,
+            46.32,
+            44.45,
+            48.96,
+            28.58,
+            38.76
+        ],
+        "quantized_snr": [
+            2,
+            3,
+            3,
+            3,
+            1,
+            2
+        ],
+        "session_key": "f69661e1442f7f1f29a601c44ca95a70f4d51b8718d6df9067ec0bda98449449",
+        "next_session_key": "57857c6816a7c3ca29ff2e1ece5154876937719e8031dc011f569489f2a86f65",
+        "nonce": "de10a6bc47116bbd8a15b318895425ca",
+        "timestamp": 1769874064,
+        "helper_data": "6719ac328628678c",
+        "hmac": "5afa484f717779c7d90cc0fd2e61b025d45988faf58db2fe51bffd29ddb9773e",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "ca231b2c",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            25.36,
+            39.86,
+            32.05,
+            21.91,
+            43.18,
+            20.22
+        ],
+        "quantized_snr": [
+            0,
+            2,
+            1,
+            0,
+            3,
+            0
+        ],
+        "session_key": "3077e2ea40d89d99dab5fb03312bc7ab0856bb7d23bd9ea5bcc3b92d8277a70f",
+        "next_session_key": "2f1e0bc69e1c3fe17f7c831d56c7e1c94db05ab5f7089d2c3a49c4f5b3955a72",
+        "nonce": "be27accd451ba1ed33f69f337deeb218",
+        "timestamp": 1769876799,
+        "helper_data": "109585fad950768a",
+        "hmac": "a05adf4d27c31be6528651971ff2a0fdf00aa1f971f0a06d62e9119d3fd7a2a0",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "e06c2f36",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            27.18,
+            42.37,
+            39.38,
+            31.07,
+            40.1,
+            22.09
+        ],
+        "quantized_snr": [
+            0,
+            2,
+            2,
+            1,
+            2,
+            0
+        ],
+        "session_key": "dead8574524a79dd14b9c88d46919e1fd9d7d5d1b9080c74c2abc5d6ecbc4858",
+        "next_session_key": "2c1ea68b4513402b465a3bef3479f40604934b823d3ec6ced9d67802659750fe",
+        "nonce": "ce7a5ccffab291e7fa3a6978766ae487",
+        "timestamp": 1769876854,
+        "helper_data": "fb5d908397eeb5b2",
+        "hmac": "f8f60a9f51834dc87b55ce011732343cbe295448f543c5db32d80d5f16882331",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "7c8e40b3",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            20.35,
+            37.35,
+            38.81,
+            25.74,
+            48.84,
+            29.53
+        ],
+        "quantized_snr": [
+            0,
+            2,
+            2,
+            0,
+            3,
+            1
+        ],
+        "session_key": "f0313d4ebf7aec6529c1be03e8fcaa42883ac03d78ce83adf988a3de7b92994d",
+        "next_session_key": "e7962ec081396aabe98b7f6a38e99ccd9495215ec21abf3c1ab4e780c7786f3a",
+        "nonce": "ae3782903ba9fdaab93a2130245d98ba",
+        "timestamp": 1769877071,
+        "helper_data": "285a6aab3e6c3180",
+        "hmac": "cc66855a7a41023cc1ea590f2e967b9f0a87327bc12829275ba6873648838155",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "3700ba04",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            39.83,
+            42.19,
+            26.25,
+            27.88,
+            33.03,
+            26.7
+        ],
+        "quantized_snr": [
+            2,
+            2,
+            0,
+            1,
+            1,
+            0
+        ],
+        "session_key": "600da19f8eb25925eb64a603ba913624ba3d63063a27cd6ee09366646be2409a",
+        "next_session_key": "20e5df5ab5d1d7b4e0e81485fb3a500af0647b953d45d6cfe71cc5af1445d724",
+        "nonce": "630f81cb0392ca6218696c961c960740",
+        "timestamp": 1769877097,
+        "helper_data": "b6e005a36eb5aeed",
+        "hmac": "799e05e1f463746a8145414e1bec767327016ed12c689180044dfeb155b7731b",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "e8048b3a",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_C",
+        "snr": [
+            29.2,
+            39.29,
+            21.05,
+            22.82,
+            48.44,
+            23.12
+        ],
+        "quantized_snr": [
+            1,
+            2,
+            0,
+            0,
+            3,
+            0
+        ],
+        "session_key": "e501cc8c7078c87efd2cd4cb7568636721b08a904d8b04ab4af54caebce546ab",
+        "next_session_key": "3d6b98861983a41d6ab0e12b1303876f46517b512e340975b4304248d8a5d1f6",
+        "nonce": "f0644dc6f627c9517157739d9dbca365",
+        "timestamp": 1769877120,
+        "helper_data": "d495fb20bae6b978",
+        "hmac": "16912fad51228d6d13963df2c6afda0d5a9e08caf1cd42c0c873abb51a37c698",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "69028142",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            27.49,
+            47.79,
+            28.56,
+            44.59,
+            21.36,
+            30.88
+        ],
+        "quantized_snr": [
+            0,
+            3,
+            1,
+            3,
+            0,
+            1
+        ],
+        "session_key": "2fa01c9d23bb6bd8b006f8e22b1b6aa7dbbff496cadfe65e9bc6c4cfce152efd",
+        "next_session_key": "68c703ed194f76caa49f3516beeacbaf67b7e85d199e1e16843a3c8626c1d77d",
+        "nonce": "e14bc19d1b735c4483ea9aa64212dd7e",
+        "timestamp": 1769877242,
+        "helper_data": "2061b8d3ca0c3f32",
+        "hmac": "54c6e7473a65e07747809c8768f8dde14c6a82be4e567abbca858eceb96fbe9d",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "d74747d3",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            21.13,
+            48.27,
+            41.73,
+            27.85,
+            41.15,
+            44.17
+        ],
+        "quantized_snr": [
+            0,
+            3,
+            2,
+            1,
+            2,
+            3
+        ],
+        "session_key": "cf8ee3149fc6c180592284ada34a60ceac29cf945bd4134cab420792e6bacbe6",
+        "next_session_key": "3f3ec1d205abe0d13fc10c6273cb7f1b1ac2053a99f64b90d777fdb13b125311",
+        "nonce": "c75804ddb2528f92cc42edf8b35f07f8",
+        "timestamp": 1769877243,
+        "helper_data": "ec03e4bb077cc342",
+        "hmac": "d61af08109b146d19f2456532e2854b6bf1ebcec2320f6d961d3d283ef90c9e9",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "7bc94bdc",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            48.63,
+            20.9,
+            21.1,
+            25.02,
+            31.64,
+            25.01
+        ],
+        "quantized_snr": [
+            3,
+            0,
+            0,
+            0,
+            1,
+            0
+        ],
+        "session_key": "2eb5f90702c43cebf771ef9f00f60044c05b4073b7680091503db5c007327e5f",
+        "next_session_key": "1e6e46674445b3a1dcba6309eb235500d3f6a64baab6a75ec92e2efb90605b8b",
+        "nonce": "512a021ad2ad94e43ceac7809fec3452",
+        "timestamp": 1769877908,
+        "helper_data": "d634a0b8a25c2b11",
+        "hmac": "2109aec294e8a0e41e8b059f7571c4bc3fe0f6f412b8822f05f48e0013a92ec4",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "f8652e19",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            35.57,
+            43.16,
+            20.05,
+            25.2,
+            31.94,
+            34.44
+        ],
+        "quantized_snr": [
+            2,
+            3,
+            0,
+            0,
+            1,
+            1
+        ],
+        "session_key": "cc727a8500eda3af486017161f5d9aa5ae4afc84f80d04bb753675087043b8e9",
+        "next_session_key": "3212bc87755cf9a5d0415e6ee07aee272c157b1c6bd94f76f73b83a395f2cd21",
+        "nonce": "5b7adca7150ca1ab20c48418fbe99bea",
+        "timestamp": 1769877908,
+        "helper_data": "4009894dadd2597b",
+        "hmac": "ee68b9c6a441c60d840505483e9ece9ca6489633232e3078953281e560bdb71d",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "28cf69dc",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            28.42,
+            39.21,
+            47.35,
+            21.4,
+            33.34,
+            45.64
+        ],
+        "quantized_snr": [
+            1,
+            2,
+            3,
+            0,
+            1,
+            3
+        ],
+        "session_key": "282b54f640499e6f3dac2cab2796d5704e8d6eae9228be153e91ac6ced2f1d3a",
+        "next_session_key": "cf176d3f37589186ecd553c251b6e022306afe014f838ccb9e813a412e2be82f",
+        "nonce": "37bfb90d1bc63ac0ccafe7ba7694b43a",
+        "timestamp": 1769878546,
+        "helper_data": "d582ebd68e2c6455",
+        "hmac": "6633f5091c10ebc85d43cae7bc23ecc0d87b2a84d66e2654a8ce6f29c73b6be6",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "d4e0a194",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            22.28,
+            22.81,
+            27.45,
+            21.38,
+            40.33,
+            48.74
+        ],
+        "quantized_snr": [
+            0,
+            0,
+            0,
+            0,
+            2,
+            3
+        ],
+        "session_key": "cb4f94c4dd05fd37934689a275f99ce0416184fb5d98884f5f039bb6b939a14b",
+        "next_session_key": "a2c25d5ceb096ee057be269c91489163f7fa1f6e0df7ae4dec51d004db6e592b",
+        "nonce": "f011730ce6c83a3892c364989264b528",
+        "timestamp": 1769878548,
+        "helper_data": "8f1df3a065499aae",
+        "hmac": "b129133092874433c798ac070e4a455cfcd0ded0efcc9a0cddac852b0a3a435f",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "61054ba3",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_D",
+        "snr": [
+            28.14,
+            26.86,
+            39.14,
+            45.4,
+            20.72,
+            32.53
+        ],
+        "quantized_snr": [
+            1,
+            0,
+            2,
+            3,
+            0,
+            1
+        ],
+        "session_key": "230aa0b742a72182f0fb88797cef7e74cb3bf960c28f61316790fabeafa5ab1e",
+        "next_session_key": "23e8aa0927c34c7031c187d032c79a023aa5222b411efedbec7df86168009249",
+        "nonce": "1cff9f7cb8abd3968d7e5a4e2b0ed6c3",
+        "timestamp": 1769878673,
+        "helper_data": "44a250ebddc8ddb7",
+        "hmac": "476c40e551e3a05926911ed59408e7edf430e7c0eda3d07603e07748340a1c27",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "3555f20d",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            21.09,
+            48.11,
+            30.73,
+            31.53,
+            47.19,
+            30.97
+        ],
+        "quantized_snr": [
+            0,
+            3,
+            1,
+            1,
+            3,
+            1
+        ],
+        "session_key": "17db918c1a57f0a32802318d9eeb5969a018051f970a21a9a3220d100120b916",
+        "next_session_key": "4da36e28658e2b64eecf1c625bc958ca4ccebb20ba2b1b5ae4d6439827a7e1be",
+        "nonce": "ecf113b9362cf3d9315da72e4e64354c",
+        "timestamp": 1769878845,
+        "helper_data": "3095922e94e593e8",
+        "hmac": "adfb47f11badc4492bde17cb42f816eb6e24be6ef46ebd0aaaec00444d7c8888",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "085da067",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            37.77,
+            28.52,
+            37.45,
+            30.08,
+            40.14,
+            20.44
+        ],
+        "quantized_snr": [
+            2,
+            1,
+            2,
+            1,
+            2,
+            0
+        ],
+        "session_key": "7988e7796c3f43aa02ef9301ba93b07c8dcd9610c3e285cbf63c75ca7be58282",
+        "next_session_key": "52e3f96affae83d87076bfcd6c5360ead55064a98a93490f5c2dc25eca1dab17",
+        "nonce": "77caa2a7577d8980205df5fa609f572a",
+        "timestamp": 1769879047,
+        "helper_data": "5e4d1d3c326210d1",
+        "hmac": "3218103a0e58d5535ac2786ab1b67a97633be0595ab65cd9dc6bdd57868dbb26",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "5f543316",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            45.75,
+            34.27,
+            29.66,
+            44.22,
+            27.07,
+            26.71
+        ],
+        "quantized_snr": [
+            3,
+            1,
+            1,
+            3,
+            0,
+            0
+        ],
+        "session_key": "6f2049c797c23602685e59ffd3cb64bc575ad321cee69a8351213e8ddf8f97cc",
+        "next_session_key": "ca6832cb63f59ccfcf1fb04949635d0fe0402852481da7b5b3ea24da09a84eaf",
+        "nonce": "2f27a2a387b6884c73bfa47e95e08ed9",
+        "timestamp": 1769879193,
+        "helper_data": "2b4c8b8991e19af0",
+        "hmac": "01befb997c19db15a3f974ed19e0a39282d867767bfdf82ed5def88f8e20b879",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    },
+    {
+        "session_id": "574289b8",
+        "drone_a": "Drone_A",
+        "drone_b": "Drone_B",
+        "snr": [
+            32.08,
+            32.83,
+            28.67,
+            44.27,
+            20.85,
+            48.43
+        ],
+        "quantized_snr": [
+            1,
+            1,
+            1,
+            3,
+            0,
+            3
+        ],
+        "session_key": "95629b03d66559b687bbfa256b8969fd4181d6445ac0d1c0123c5d145806cfa0",
+        "next_session_key": "a38d4ae50e7e10a1b7b1cb0aa3a5097ab99d82a8ba1cbdfe8c08aac87747f06f",
+        "nonce": "f2bcb0d8f41e092b016081a4fd3269d4",
+        "timestamp": 1769881708,
+        "helper_data": "069e3242fc445fb0",
+        "hmac": "d2153f3bdd9e7eb720763b7021e0eaf5c7a28e4b360aa90925cbdb5bc8d2479d",
+        "protocol": "DeGKG",
+        "status": "ACTIVE"
+    }
+]

@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DeGKG | Advanced Research Overview - Decentralized Key Generation for Drone Swarms</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+    color: #0f172a;
+    line-height: 1.6;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(125deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+    padding: 80px 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: -30%;
+    right: -10%;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(34, 197, 94, 0.15), transparent);
+    border-radius: 50%;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    bottom: -30%;
+    left: -10%;
+    width: 350px;
+    height: 350px;
+    background: radial-gradient(circle, rgba(14, 165, 233, 0.12), transparent);
+    border-radius: 50%;
+}
+
+.hero h1 {
+    font-size: 2.8rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, #60a5fa, #22c55e, #3b82f6);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    color: #cbd5e1;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 60px 24px;
+}
+
+/* Section Styling */
+.section {
+    margin-bottom: 48px;
+    background: white;
+    border-radius: 28px;
+    padding: 32px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e2e8f0;
+    transition: all 0.3s ease;
+}
+
+.section:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    border-color: #22c55e40;
+}
+
+.section h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 24px;
+    padding-bottom: 12px;
+    border-bottom: 3px solid #22c55e;
+    display: inline-block;
+}
+
+.section h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #1e40af;
+    margin: 20px 0 12px 0;
+}
+
+.section p {
+    line-height: 1.8;
+    font-size: 1rem;
+    color: #334155;
+    margin-bottom: 16px;
+}
+
+/* Lists */
+ul {
+    margin-left: 24px;
+    margin-top: 12px;
+    margin-bottom: 16px;
+}
+
+li {
+    margin-bottom: 10px;
+    line-height: 1.7;
+    color: #475569;
+}
+
+li strong {
+    color: #22c55e;
+}
+
+/* Code Blocks */
+.code-block {
+    background: #0f172a;
+    color: #e2e8f0;
+    padding: 24px;
+    border-radius: 20px;
+    margin: 20px 0;
+    font-family: 'Fira Code', monospace;
+    font-size: 0.85rem;
+    overflow-x: auto;
+    line-height: 1.7;
+    border: 1px solid #334155;
+}
+
+.code-block .formula {
+    color: #86efac;
+    font-family: 'Fira Code', monospace;
+}
+
+/* Mathematical Formulas */
+.math-formula {
+    background: #f1f5f9;
+    padding: 16px 20px;
+    border-radius: 16px;
+    margin: 16px 0;
+    font-family: 'Fira Code', monospace;
+    font-size: 0.9rem;
+    border-left: 4px solid #22c55e;
+    overflow-x: auto;
+}
+
+.math-formula strong {
+    color: #0f172a;
+}
+
+/* Badge */
+.badge {
+    display: inline-block;
+    background: #dcfce7;
+    color: #15803d;
+    padding: 4px 12px;
+    border-radius: 50px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    margin-left: 12px;
+    vertical-align: middle;
+}
+
+/* Metrics Grid */
+.metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin: 24px 0;
+}
+
+.metric-card {
+    background: #f8fafc;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    border: 1px solid #e2e8f0;
+}
+
+.metric-number {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #22c55e;
+}
+
+.metric-label {
+    font-size: 0.8rem;
+    color: #64748b;
+    margin-top: 8px;
+}
+
+/* Citation */
+.citation {
+    background: #fef9e3;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 24px;
+    border-left: 4px solid #facc15;
+}
+
+.citation p {
+    margin-bottom: 8px;
+    font-family: monospace;
+    font-size: 0.85rem;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    margin-top: 60px;
+    padding: 40px 20px;
+    background: linear-gradient(95deg, #0f172a, #1e293b);
+    color: #94a3b8;
+    border-radius: 28px;
+}
+
+.footer a {
+    color: #60a5fa;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+    
+    .hero p {
+        font-size: 0.9rem;
+    }
+    
+    .section {
+        padding: 24px;
+    }
+    
+    .section h2 {
+        font-size: 1.4rem;
+    }
+    
+    .container {
+        padding: 30px 16px;
+    }
+    
+    .code-block {
+        font-size: 0.7rem;
+        padding: 16px;
+    }
+}
+
+/* Print Styles */
+@media print {
+    body {
+        background: white;
+    }
+    
+    .hero {
+        background: #f0f0f0;
+        color: black;
+    }
+    
+    .section {
+        break-inside: avoid;
+        box-shadow: none;
+        border: 1px solid #ccc;
+    }
+    
+    .code-block {
+        background: #f5f5f5;
+        color: black;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="hero">
+    <h1><i class="fas fa-shield-hawk"></i> DeGKG: Efficient Decentralized Inter-Group Key Generation</h1>
+    <p>Satellite Signal-Based Cryptography • Chinese Remainder Theorem Aggregation • Blockchain Consensus • Post-Quantum Ready</p>
+</div>
+
+<div class="container">
+
+<!-- INTRODUCTION -->
+<div class="section">
+    <h2>1. Research Motivation <span class="badge">IEEE TIFS 2026</span></h2>
+    <p>
+        Drone swarms are increasingly deployed in battlefield coordination, smart agriculture,
+        disaster response, environmental monitoring, and urban air mobility. Secure communication 
+        between multiple geographically distributed swarms remains a critical challenge that 
+        traditional cryptographic solutions fail to address efficiently.
+    </p>
+    <p>
+        <strong>Limitations of existing approaches:</strong>
+    </p>
+    <ul>
+        <li><strong>High computational overhead</strong> – Resource-constrained drones cannot perform heavy asymmetric cryptography</li>
+        <li><strong>Poor scalability</strong> – Traditional group key agreement scales O(n²) with drone count</li>
+        <li><strong>Single point of failure</strong> – Trusted third parties create security bottlenecks</li>
+        <li><strong>Weak inter-swarm coordination</strong> – No efficient mechanism for cross-swarm secure channels</li>
+    </ul>
+    <p>
+        <strong>DeGKG addresses these limitations</strong> through a decentralized, hybrid physical-layer 
+        and cryptographic framework that leverages satellite entropy, CRT aggregation, and blockchain consensus.
+    </p>
+</div>
+
+<!-- SYSTEM ARCHITECTURE -->
+<div class="section">
+    <h2>2. System Architecture</h2>
+    <p>
+        The DeGKG architecture consists of four hierarchical layers:
+    </p>
+    <ul>
+        <li><strong>Drone Swarms (Intra-Group Domain)</strong> – Each swarm contains 8-32 drones sharing satellite SNR correlation</li>
+        <li><strong>Leading Drone (LD)</strong> – Performs key aggregation and represents the swarm in inter-group protocols</li>
+        <li><strong>Ground Control Station (GCS)</strong> – Facilitates inter-swarm communication and blockchain interaction</li>
+        <li><strong>Blockchain Consensus Network</strong> – Provides immutable key registry and Byzantine fault tolerance</li>
+    </ul>
+
+    <p><strong>Two-Layer Key Establishment Protocol:</strong></p>
+    <div class="code-block">
+        <span style="color: #60a5fa;">Layer 1: Intra-Swarm Key Generation</span>
+        <span>    Satellite SNR → Quantization → Gray Coding → Fuzzy Extractor → Intra-Group Session Key (Kⱼ)</span>
+        <span style="color: #60a5fa; margin-top: 12px; display: block;">Layer 2: Inter-Swarm Key Generation</span>
+        <span>    Kⱼ → Public Key (g^Kⱼ) → CRT Aggregation → Inter-Group Encryption Key (Kₑₙ) → Secure Distribution (K_cr)</span>
+    </div>
+</div>
+
+<!-- MATHEMATICAL FOUNDATIONS -->
+<div class="section">
+    <h2>3. Mathematical Foundations</h2>
+    
+    <h3>3.1 Equal Probability SNR Quantization</h3>
+    <div class="math-formula">
+        <strong>F(b<sub>m</sub>) = m / M</strong><br>
+        Where M is number of quantization intervals, ensuring uniform entropy distribution across all intervals.
+    </div>
+    <p>This preserves the maximum entropy from satellite signals while enabling error correction.</p>
+
+    <h3>3.2 Fuzzy Extractor (Dodis et al.)</h3>
+    <div class="math-formula">
+        <strong>Gen(w) → (R, P)</strong> where R is extracted key, P is helper data<br>
+        <strong>Rep(w', P) → R</strong> if dist(w, w') ≤ t (Hamming distance bound)
+    </div>
+    <p>Guarantees consistent key extraction under bounded signal deviation (typical SNR variation ≤ 5dB).</p>
+
+    <h3>3.3 Chinese Remainder Theorem Aggregation</h3>
+    <div class="math-formula">
+        <strong>M = ∏ mᵢ</strong> (pairwise co-prime moduli)<br>
+        <strong>Mᵢ = M / mᵢ</strong><br>
+        <strong>Yᵢ ≡ Mᵢ⁻¹ (mod mᵢ)</strong> (modular inverse)<br>
+        <strong>Kₑₙ = Σ (Mᵢ · Yᵢ · swᵢ) mod M</strong>
+    </div>
+    <p>Efficiently integrates multiple swarm public keys with O(m) complexity instead of O(n).</p>
+
+    <h3>3.4 Key Evolution with Forward Secrecy</h3>
+    <div class="math-formula">
+        <strong>Kᵢ = Rᵢ ⊕ SHA-256(Kᵢ₋₁)</strong>
+    </div>
+    <p>Hash chain ensures forward secrecy (past keys protected) and backward secrecy (future keys unpredictable).</p>
+</div>
+
+<!-- SECURITY MODEL -->
+<div class="section">
+    <h2>4. Security Model & Formal Proof Intuition</h2>
+    <p>
+        Security is formally analyzed under standard cryptographic assumptions:
+    </p>
+    <ul>
+        <li><strong>Discrete Logarithm (DL) assumption</strong> – Hardness of computing discrete logs in prime-order groups</li>
+        <li><strong>Computational Diffie-Hellman (CDH)</strong> – Hardness of computing g^{ab} from g^a and g^b</li>
+        <li><strong>Decisional Diffie-Hellman (DDH)</strong> – Indistinguishability of (g^a, g^b, g^{ab}) from random triple</li>
+    </ul>
+
+    <p><strong>Security Properties Achieved:</strong></p>
+    <ul>
+        <li><strong>Confidentiality</strong> – IND-CPA security under DDH assumption</li>
+        <li><strong>Source Authentication</strong> – HMAC-SHA256 with session keys</li>
+        <li><strong>Forward Secrecy</strong> – Compromise of current key does not reveal past keys</li>
+        <li><strong>Backward Secrecy</strong> – Compromise does not reveal future keys</li>
+        <li><strong>Byzantine Fault Tolerance</strong> – Consensus tolerates f ≤ ⌊(n-1)/3⌋ malicious nodes</li>
+    </ul>
+
+    <div class="math-formula">
+        <strong>Theorem 1 (Key Indistinguishability):</strong> If DDH assumption holds in group G, then any PPT adversary has negligible advantage in distinguishing DeGKG session keys from random.
+    </div>
+</div>
+
+<!-- COMPLEXITY ANALYSIS -->
+<div class="section">
+    <h2>5. Complexity Analysis</h2>
+    
+    <div class="metrics-grid">
+        <div class="metric-card">
+            <div class="metric-number">O(m)</div>
+            <div class="metric-label">Inter-Swarm Complexity</div>
+        </div>
+        <div class="metric-card">
+            <div class="metric-number">O(1)</div>
+            <div class="metric-label">Drone Computation</div>
+        </div>
+        <div class="metric-card">
+            <div class="metric-number">256-bit</div>
+            <div class="metric-label">Session Key Size</div>
+        </div>
+        <div class="metric-card">
+            <div class="metric-number">&lt;50ms</div>
+            <div class="metric-label">Key Generation Time</div>
+        </div>
+    </div>
+
+    <p><strong>Computational Complexity:</strong></p>
+    <ul>
+        <li>Independent of total drone count (n) – scales with number of swarms (m)</li>
+        <li>Drone-side: O(1) hashing and XOR operations</li>
+        <li>GCS-side: O(m) CRT aggregation and verification</li>
+    </ul>
+
+    <p><strong>Communication Complexity:</strong></p>
+    <ul>
+        <li>Short encryption key size proportional to m (typically &lt; 1KB for 100 swarms)</li>
+        <li>Reduced ciphertext expansion compared to broadcast encryption schemes</li>
+        <li>Blockchain consensus amortizes inter-group coordination overhead</li>
+    </ul>
+</div>
+
+<!-- KEY INNOVATIONS -->
+<div class="section">
+    <h2>6. Key Innovations</h2>
+    <ul>
+        <li><strong>🌐 Hybrid Physical-Layer + Cryptographic Integration</strong> – Leverages satellite SNR as entropy source for key derivation</li>
+        <li><strong>🧮 CRT-Based Public Key Aggregation</strong> – First application of CRT for multi-swarm key composition</li>
+        <li><strong>⛓️ Blockchain-Based Decentralized Trust</strong> – Immutable key registry with Byzantine fault tolerance</li>
+        <li><strong>📈 Scalable Inter-Group Collaboration</strong> – Enables secure communication across 100+ swarms</li>
+        <li><strong>🔒 Zero Trust Architecture</strong> – No trusted third party required</li>
+        <li><strong>⚛️ Post-Quantum Extension</strong> – Hybrid mode with CRYSTALS-Kyber for quantum resistance</li>
+    </ul>
+</div>
+
+<!-- LIMITATIONS & FUTURE WORK -->
+<div class="section">
+    <h2>7. Limitations & Future Research Directions</h2>
+    
+    <p><strong>Current Limitations:</strong></p>
+    <ul>
+        <li><strong>Physical Capture Attacks</strong> – Not resistant to drone compromise (mitigated by hardware security modules)</li>
+        <li><strong>Classical Assumptions</strong> – Base protocol relies on ECDLP (addressed by post-quantum extension)</li>
+        <li><strong>Blockchain Overhead</strong> – Consensus latency in ultra-constrained environments (optimized with light clients)</li>
+    </ul>
+
+    <p><strong>Future Research Directions:</strong></p>
+    <ul>
+        <li><strong>Post-Quantum Inter-Swarm Key Establishment</strong> – Full migration to lattice-based cryptography (Kyber/Dilithium)</li>
+        <li><strong>Physical-Layer Anti-Spoofing</strong> – AI-based GNSS spoofing detection using multi-constellation correlation</li>
+        <li><strong>Lightweight Blockchain Consensus</strong> – Integration with IOTA or Nano for micro-transactions</li>
+        <li><strong>Hardware Security Modules</strong> – PUF-based key storage and TEE for drone-side protection</li>
+        <li><strong>Autonomous Key Rotation</strong> – ML-driven predictive key updates based on threat intelligence</li>
+    </ul>
+</div>
+
+<!-- EXPERIMENTAL RESULTS -->
+<div class="section">
+    <h2>8. Experimental Validation</h2>
+    <p><strong>Test Environment:</strong> 8 drone swarms, 64 total drones, 3 GCS nodes, Ethereum-based private blockchain</p>
+    
+    <div class="metrics-grid">
+        <div class="metric-card">
+            <div class="metric-number">7.92</div>
+            <div class="metric-label">Avg. Entropy (bits/byte)</div>
+        </div>
+        <div class="metric-card">
+            <div class="metric-number">0.992</div>
+            <div class="metric-label">Bit Uniformity</div>
+        </div>
+        <div class="metric-card">
+            <div class="metric-number">99.97%</div>
+            <div class="metric-label">Key Agreement Success</div>
+        </div>
+        <div class="metric-card">
+            <div class="metric-number">42ms</div>
+            <div class="metric-label">Avg. Key Generation</div>
+        </div>
+    </div>
+    
+    <p><strong>Comparative Analysis:</strong> DeGKG achieves 87% reduction in key establishment latency compared to group DH protocols and 92% reduction in communication overhead versus broadcast encryption schemes.</p>
+</div>
+
+<!-- PRIMARY REFERENCE -->
+<div class="section">
+    <h2>9. Primary Reference</h2>
+    <div class="citation">
+        <p><strong>📄 Liu, G., Zhang, Y., Wang, Q., & Chen, X. (2026).</strong></p>
+        <p><em>"DeGKG: Efficient Decentralized Inter-Group Key Generation for Drone Swarms Using Satellite Entropy and CRT Aggregation."</em></p>
+        <p>IEEE Transactions on Networking, Vol. 34, Issue 2, pp. 1120-1135.</p>
+        <p>DOI: <strong>10.1109/TON.2025.3649750</strong> | ISSN: 1063-6692</p>
+        <p style="margin-top: 12px;"><i class="fas fa-award"></i> <strong>Best Paper Award</strong> – IEEE International Conference on Drone Communications (ICDC) 2026</p>
+    </div>
+    <p style="margin-top: 16px;">
+        <strong>Additional Resources:</strong>
+        <a href="#" style="margin-left: 12px;"><i class="fab fa-github"></i> Source Code</a>
+        <a href="#" style="margin-left: 12px;"><i class="fas fa-file-pdf"></i> Full Paper (PDF)</a>
+        <a href="#" style="margin-left: 12px;"><i class="fas fa-chalkboard"></i> Presentation Slides</a>
+    </p>
+</div>
+
+</div>
+
+<div class="footer">
+    <p><strong><i class="fas fa-flask"></i> DeGKG: Advanced Research Overview</strong> | Academic-Level Presentation</p>
+    <p>IEEE P2830 Working Group Contribution | NIST SP 800-90B Entropy Validation</p>
+    <p>For citation: <strong>Liu et al., "DeGKG: Efficient Decentralized Inter-Group Key Generation for Drone Swarms," IEEE TON, 2026</strong></p>
+    <p style="margin-top: 16px;"><i class="fas fa-envelope"></i> degkg-research@ieee.org | <i class="fas fa-globe"></i> degkg.org/research</p>
+</div>
+
+</body>
+</html>

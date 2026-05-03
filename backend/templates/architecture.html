@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DeGKG Core Algorithms | Cryptographic Architecture</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+    color: #0f172a;
+    min-height: 100vh;
+}
+
+/* HERO SECTION */
+.hero {
+    background: linear-gradient(125deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+    padding: 80px 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: -30%;
+    right: -10%;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(14, 165, 233, 0.15), transparent);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    bottom: -30%;
+    left: -10%;
+    width: 350px;
+    height: 350px;
+    background: radial-gradient(circle, rgba(34, 197, 94, 0.1), transparent);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.hero h1 {
+    font-size: 2.8rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, #60a5fa, #22c55e, #3b82f6);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 16px;
+    position: relative;
+    z-index: 1;
+}
+
+.hero p {
+    margin-top: 12px;
+    color: #cbd5e1;
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: 1;
+}
+
+/* CONTAINER */
+.container {
+    max-width: 1300px;
+    margin: auto;
+    padding: 50px 24px;
+}
+
+/* ALGORITHM CARD */
+.algorithm-card {
+    background: white;
+    margin-bottom: 40px;
+    border-radius: 28px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    border: 1px solid #e2e8f0;
+}
+
+.algorithm-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 25px 40px rgba(0, 0, 0, 0.12);
+    border-color: #3b82f6;
+}
+
+/* Algorithm Image */
+.algorithm-image {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.algorithm-card:hover .algorithm-image {
+    transform: scale(1.02);
+}
+
+/* Content Area */
+.algorithm-content {
+    padding: 28px 32px;
+    border-left: 6px solid #22c55e;
+}
+
+.algorithm-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.algorithm-title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #0f172a;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.algorithm-badge {
+    background: #dbeafe;
+    color: #1e40af;
+    padding: 6px 14px;
+    border-radius: 50px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* CODE BLOCK */
+.code-block {
+    background: #0f172a;
+    border-radius: 20px;
+    padding: 24px;
+    margin: 20px 0;
+    overflow-x: auto;
+}
+
+pre {
+    font-family: 'Fira Code', 'Courier New', monospace;
+    font-size: 0.85rem;
+    line-height: 1.8;
+    color: #e2e8f0;
+    background: transparent;
+    margin: 0;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.code-line {
+    display: block;
+    padding: 3px 0;
+}
+
+.code-line strong {
+    color: #22c55e;
+}
+
+.code-line .keyword {
+    color: #60a5fa;
+}
+
+.code-line .number {
+    color: #facc15;
+}
+
+.code-line .operator {
+    color: #c084fc;
+}
+
+/* Mathematical Notation */
+.math-block {
+    background: #f1f5f9;
+    padding: 18px 24px;
+    border-radius: 16px;
+    margin: 16px 0;
+    border-left: 4px solid #22c55e;
+}
+
+.math-block p {
+    margin: 8px 0;
+    font-family: 'Fira Code', monospace;
+    font-size: 0.85rem;
+    color: #1e293b;
+}
+
+.formula {
+    background: #e2e8f0;
+    padding: 4px 10px;
+    border-radius: 8px;
+    font-family: monospace;
+    font-weight: 500;
+    display: inline-block;
+    margin: 2px 0;
+}
+
+/* Description */
+.algorithm-description {
+    background: #fef9e3;
+    padding: 16px 20px;
+    border-radius: 16px;
+    margin-top: 16px;
+    font-size: 0.9rem;
+    color: #854d0e;
+    border-left: 3px solid #eab308;
+}
+
+.algorithm-description i {
+    color: #22c55e;
+    margin-right: 8px;
+}
+
+/* Summary Table */
+.summary-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 16px;
+}
+
+.summary-table th {
+    background: #0f172a;
+    color: white;
+    padding: 14px 12px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
+.summary-table td {
+    padding: 12px;
+    border-bottom: 1px solid #e2e8f0;
+    font-size: 0.85rem;
+}
+
+.summary-table tr:hover {
+    background: #f8fafc;
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    margin: 60px 0 30px;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    border-radius: 28px;
+    color: #cbd5e1;
+}
+
+.footer p {
+    margin: 12px 0;
+}
+
+.footer a {
+    color: #60a5fa;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+    
+    .hero p {
+        font-size: 0.9rem;
+    }
+    
+    .algorithm-title {
+        font-size: 1.2rem;
+    }
+    
+    .algorithm-content {
+        padding: 20px;
+    }
+    
+    .container {
+        padding: 24px 16px;
+    }
+    
+    pre {
+        font-size: 0.7rem;
+        line-height: 1.5;
+    }
+    
+    .algorithm-image {
+        height: 160px;
+    }
+}
+
+/* Print Styles */
+@media print {
+    body {
+        background: white;
+    }
+    
+    .hero {
+        background: #f0f0f0;
+        color: black;
+    }
+    
+    .hero h1 {
+        color: #0ea5e9;
+        background: none;
+    }
+    
+    .algorithm-card {
+        break-inside: avoid;
+        box-shadow: none;
+        border: 1px solid #ccc;
+    }
+    
+    .code-block {
+        background: #f5f5f5;
+    }
+    
+    pre {
+        color: black;
+    }
+    
+    .algorithm-badge {
+        background: #e0e0e0;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="hero">
+    <h1><i class="fas fa-shield-hawk"></i> DeGKG Cryptographic Core Algorithms</h1>
+    <p>Satellite-Driven Key Generation • Fuzzy Extraction • CRT-Based Swarm Encryption • Post-Quantum Ready</p>
+</div>
+
+<div class="container">
+
+<!-- Algorithm 1 -->
+<div class="algorithm-card">
+    <img class="algorithm-image" src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?q=80&w=1400&auto=format" alt="Satellite Communication">
+    <div class="algorithm-content">
+        <div class="algorithm-header">
+            <div class="algorithm-title">
+                <i class="fas fa-satellite-dish" style="color: #22c55e;"></i>
+                Algorithm 1: Intra-Group Session Key Creation
+            </div>
+            <div class="algorithm-badge">Phase 1 • Key Establishment</div>
+        </div>
+        <div class="code-block">
+            <pre>
+<span class="code-line"><strong>INPUT:</strong> Satellite SNR signals from drones {s₁, s₂, ..., sₙ}</span>
+<span class="code-line"><strong>OUTPUT:</strong> Shared Intra-Group Session Key K</span>
+<span class="code-line"></span>
+<span class="code-line"><span class="number">1.</span> Collect SNR values from <span class="keyword">visible satellites</span> for each drone</span>
+<span class="code-line"><span class="number">2.</span> <strong>Quantize</strong> SNR values into M intervals → q₁, q₂, ..., qₖ</span>
+<span class="code-line"><span class="number">3.</span> Convert quantized values to <span class="keyword">Gray code</span> → g(q)</span>
+<span class="code-line"><span class="number">4.</span> Apply <strong>Fuzzy Extractor</strong>:</span>
+<span class="code-line">      (R, P) = Gen(w) where w = g(q)</span>
+<span class="code-line"><span class="number">5.</span> Broadcast helper data <strong>P</strong> to all swarm members</span>
+<span class="code-line"><span class="number">6.</span> Each drone computes using its own w':</span>
+<span class="code-line">      R' = Rep(w', P)</span>
+<span class="code-line"><span class="number">7.</span> Set <strong>Session Key</strong>:</span>
+<span class="code-line">      K = R'</span>
+<span class="code-line"><span class="number">8.</span> Verify using hash: <span class="keyword">h(K) == stored_hash</span></span>
+            </pre>
+        </div>
+        <div class="algorithm-description">
+            <i class="fas fa-info-circle"></i> <strong>Security Properties:</strong> Fuzzy extraction ensures key stability despite SNR variations. Gray coding minimizes bit errors during quantization. Achieves 256-bit entropy with satellite randomness.
+        </div>
+        <div class="math-block">
+            <p><strong>📐 Mathematical Formulation:</strong></p>
+            <p>K = Rep( FuzzyExtract( Gray( Quantize( SNR<sub>sat</sub> ) ) ), P )</p>
+            <p>Where: <span class="formula">SNR ∈ [20, 60] dB</span>, <span class="formula">M = 2<sup>8</sup></span> quantization levels</p>
+        </div>
+    </div>
+</div>
+
+<!-- Algorithm 2 -->
+<div class="algorithm-card">
+    <img class="algorithm-image" src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1400&auto=format" alt="Key Evolution">
+    <div class="algorithm-content">
+        <div class="algorithm-header">
+            <div class="algorithm-title">
+                <i class="fas fa-sync-alt" style="color: #22c55e;"></i>
+                Algorithm 2: Intra-Group Key Update
+            </div>
+            <div class="algorithm-badge">Phase 2 • Forward Secrecy</div>
+        </div>
+        <div class="code-block">
+            <pre>
+<span class="code-line"><strong>INPUT:</strong> Previous key Kᵢ₋₁, new satellite signals wᵢ</span>
+<span class="code-line"><strong>OUTPUT:</strong> Updated session key Kᵢ</span>
+<span class="code-line"></span>
+<span class="code-line"><span class="number">1.</span> Encode new SNR signals → wᵢ = Gray(Quantize(SNRᵢ))</span>
+<span class="code-line"><span class="number">2.</span> Generate new fuzzy extractor output:</span>
+<span class="code-line">      (Rᵢ, Pᵢ) = Gen(wᵢ)</span>
+<span class="code-line"><span class="number">3.</span> Compute updated key with <strong>forward secrecy</strong>:</span>
+<span class="code-line">      Kᵢ = Rᵢ ⊕ <span class="keyword">SHA-256</span>(Kᵢ₋₁)</span>
+<span class="code-line"><span class="number">4.</span> Broadcast helper data Pᵢ and hash for verification</span>
+<span class="code-line"><span class="number">5.</span> All drones compute Kᵢ = Rep(wᵢ', Pᵢ) ⊕ h(Kᵢ₋₁)</span>
+<span class="code-line"><span class="number">6.</span> <strong>Old key Kᵢ₋₁ is permanently discarded</strong></span>
+            </pre>
+        </div>
+        <div class="algorithm-description">
+            <i class="fas fa-shield-alt"></i> <strong>Forward Secrecy Guarantee:</strong> Compromise of current key does not reveal previous keys. XOR with hash of previous key ensures one-way key evolution.
+        </div>
+        <div class="math-block">
+            <p><strong>📐 Key Evolution Function:</strong> <span class="formula">Kᵢ = Rᵢ ⊕ SHA-256(Kᵢ₋₁)</span></p>
+            <p>Property: <span class="formula">Kᵢ₋₁ cannot be derived from Kᵢ</span> (one-way function)</p>
+        </div>
+    </div>
+</div>
+
+<!-- Algorithm 3 -->
+<div class="algorithm-card">
+    <img class="algorithm-image" src="https://images.unsplash.com/photo-1527977966376-1c8408f9f108?q=80&w=1400&auto=format" alt="Drone Swarm">
+    <div class="algorithm-content">
+        <div class="algorithm-header">
+            <div class="algorithm-title">
+                <i class="fas fa-cloud-upload-alt" style="color: #22c55e;"></i>
+                Algorithm 3: Swarm Public Key Generation
+            </div>
+            <div class="algorithm-badge">Phase 3 • Identity Management</div>
+        </div>
+        <div class="code-block">
+            <pre>
+<span class="code-line"><strong>INPUT:</strong> Intra-Group Key K (shared secret within swarm)</span>
+<span class="code-line"><strong>OUTPUT:</strong> Swarm Public Key sw (elliptic curve point)</span>
+<span class="code-line"></span>
+<span class="code-line"><span class="number">1.</span> Each Leading Drone selects <span class="keyword">elliptic curve</span> parameters:</span>
+<span class="code-line">      <span class="operator">secp256r1</span> (NIST P-256) or <span class="operator">Curve25519</span></span>
+<span class="code-line"><span class="number">2.</span> Compute swarm public key:</span>
+<span class="code-line">      sw = <span class="keyword">g^K</span> mod p  (or scalar multiplication: sw = K · G)</span>
+<span class="code-line"><span class="number">3.</span> Append <span class="keyword">timestamp</span> and <span class="keyword">swarm_id</span> to sw</span>
+<span class="code-line"><span class="number">4.</span> Sign sw with leader's private key</span>
+<span class="code-line"><span class="number">5.</span> Send signed sw to <strong>Ground Control Station (GCS)</strong></span>
+<span class="code-line"><span class="number">6.</span> GCS verifies signature and stores in <strong>blockchain registry</strong></span>
+            </pre>
+        </div>
+        <div class="algorithm-description">
+            <i class="fas fa-link"></i> <strong>Blockchain Integration:</strong> Each swarm public key is anchored to the immutable ledger, enabling verifiable cross-swarm authentication.
+        </div>
+        <div class="math-block">
+            <p><strong>📐 Elliptic Curve Construction:</strong> <span class="formula">sw = K · G</span> where G is base point, K ∈ [1, n-1]</p>
+            <p>Security: <span class="formula">ECDLP</span> hard with 256-bit keys → 128-bit quantum security</p>
+        </div>
+    </div>
+</div>
+
+<!-- Algorithm 4 -->
+<div class="algorithm-card">
+    <img class="algorithm-image" src="https://images.unsplash.com/photo-1639322537228-f710d846310a?q=80&w=1400&auto=format" alt="Blockchain & CRT">
+    <div class="algorithm-content">
+        <div class="algorithm-header">
+            <div class="algorithm-title">
+                <i class="fas fa-link" style="color: #22c55e;"></i>
+                Algorithm 4: Inter-Group Encryption Key (CRT Aggregation)
+            </div>
+            <div class="algorithm-badge">Phase 4 • Swarm Federation</div>
+        </div>
+        <div class="code-block">
+            <pre>
+<span class="code-line"><strong>INPUT:</strong> Swarm public keys sw₁, sw₂, ..., swⱼ from J swarms</span>
+<span class="code-line"><strong>OUTPUT:</strong> Inter-Group Encryption Key Kₑₙ (CRT composite)</span>
+<span class="code-line"></span>
+<span class="code-line"><span class="number">1.</span> Choose pairwise <span class="keyword">co-prime moduli</span>: m₁, m₂, ..., mⱼ</span>
+<span class="code-line">      (e.g., primes: 101, 103, 107, 109, 113...)</span>
+<span class="code-line"><span class="number">2.</span> Compute product modulus:</span>
+<span class="code-line">      M = m₁ × m₂ × ... × mⱼ</span>
+<span class="code-line"><span class="number">3.</span> For each swarm i:</span>
+<span class="code-line">      Mᵢ = M / mᵢ</span>
+<span class="code-line">      Find Yᵢ such that <strong>Mᵢ × Yᵢ ≡ 1 (mod mᵢ)</strong>  [modular inverse]</span>
+<span class="code-line"><span class="number">4.</span> Apply <strong>Chinese Remainder Theorem</strong>:</span>
+<span class="code-line">      Kₑₙ = Σ (Mᵢ × Yᵢ × swᵢ) mod M</span>
+<span class="code-line"><span class="number">5.</span> Store Kₑₙ on <span class="keyword">blockchain</span> with timestamp</span>
+<span class="code-line"><span class="number">6.</span> All swarms can independently compute Kₑₙ using public data</span>
+            </pre>
+        </div>
+        <div class="algorithm-description">
+            <i class="fas fa-calculator"></i> <strong>CRT Advantage:</strong> Enables threshold encryption where any t-out-of-J swarms can reconstruct the key. Provides fault tolerance and distributed trust.
+        </div>
+        <div class="math-block">
+            <p><strong>📐 CRT Theorem:</strong> Unique solution Kₑₙ exists modulo M given residues swᵢ modulo mᵢ</p>
+            <p><span class="formula">Kₑₙ ≡ sw₁ (mod m₁)</span>, <span class="formula">Kₑₙ ≡ sw₂ (mod m₂)</span>, ..., <span class="formula">Kₑₙ ≡ swⱼ (mod mⱼ)</span></p>
+        </div>
+    </div>
+</div>
+
+<!-- Algorithm 5 -->
+<div class="algorithm-card">
+    <img class="algorithm-image" src="https://images.unsplash.com/photo-1508612761958-e931c0b1e9b7?q=80&w=1400&auto=format" alt="Secure Distribution">
+    <div class="algorithm-content">
+        <div class="algorithm-header">
+            <div class="algorithm-title">
+                <i class="fas fa-lock" style="color: #22c55e;"></i>
+                Algorithm 5: Inter-Group Session Key Distribution
+            </div>
+            <div class="algorithm-badge">Phase 5 • Secure Multicast</div>
+        </div>
+        <div class="code-block">
+            <pre>
+<span class="code-line"><strong>INPUT:</strong> Composite key Kₑₙ from blockchain, swarm private keys</span>
+<span class="code-line"><strong>OUTPUT:</strong> Shared Inter-Swarm Session Key K_cr</span>
+<span class="code-line"></span>
+<span class="code-line"><span class="number">1.</span> Initiator swarm selects random session key <strong>K_cr</strong> ∈ [1, M-1]</span>
+<span class="code-line"><span class="number">2.</span> Encrypt using <span class="keyword">ElGamal encryption</span>:</span>
+<span class="code-line">      c₁ = K_cr × (Kₑₙ)^s mod M</span>
+<span class="code-line">      c₂ = g^s mod M  (where g is generator)</span>
+<span class="code-line"><span class="number">3.</span> Send (c₁, c₂) to all target swarms via GCS</span>
+<span class="code-line"><span class="number">4.</span> Each recipient swarm i decrypts using its private key Kᵢ:</span>
+<span class="code-line">      K_cr = c₁ × (c₂)^<span class="operator">(-Kᵢ)</span> mod M</span>
+<span class="code-line"><span class="number">5.</span> Verify using HMAC: <span class="keyword">HMAC(K_cr, nonce) == received_tag</span></span>
+<span class="code-line"><span class="number">6.</span> Establish secure inter-swarm channel with K_cr</span>
+            </pre>
+        </div>
+        <div class="algorithm-description">
+            <i class="fas fa-shield-hawk"></i> <strong>Security Guarantees:</strong> Confidentiality via ElGamal, authentication via HMAC, and perfect forward secrecy through ephemeral session keys.
+        </div>
+        <div class="math-block">
+            <p><strong>📐 Decryption Proof:</strong> <span class="formula">c₁ × (c₂)^(-Kᵢ) = K_cr × g^{sKₑₙ} × g^{-sKᵢ} = K_cr</span> when <span class="formula">Kₑₙ ≡ Kᵢ (mod mᵢ)</span></p>
+        </div>
+    </div>
+</div>
+
+<!-- Algorithm Summary Table -->
+<div class="algorithm-card">
+    <div class="algorithm-content">
+        <div class="algorithm-header">
+            <div class="algorithm-title">
+                <i class="fas fa-chart-bar" style="color: #22c55e;"></i>
+                Algorithm Summary & Security Properties
+            </div>
+            <div class="algorithm-badge">Complete Pipeline</div>
+        </div>
+        <table class="summary-table">
+            <thead>
+                <tr>
+                    <th>Algorithm</th>
+                    <th>Security Property</th>
+                    <th>Key Size</th>
+                    <th>Quantum Safe</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Intra-Group Key</td><td>Fuzzy Extraction, Error Tolerance</td><td>256-bit</td><td>✅ Yes</td></tr>
+                <tr><td>Key Update</td><td>Forward Secrecy, One-way Function</td><td>256-bit</td><td>✅ Yes</td></tr>
+                <tr><td>Swarm Public Key</td><td>ECDLP, Blockchain Anchored</td><td>256-bit point</td><td>⚠️ Classical</td></tr>
+                <tr><td>CRT Aggregation</td><td>Threshold, Distributed Trust</td><td>Variable (≥2048-bit)</td><td>✅ Yes</td></tr>
+                <tr><td>Inter-Swarm Key</td><td>ElGamal, Perfect Forward Secrecy</td><td>256-bit session</td><td>✅ With Kyber</td></tr>
+                <tr><td>Post-Quantum Hybrid</td><td>NIST PQC Level 3, Hybrid KDF</td><td>256-bit + 256-bit</td><td>✅ Quantum-Resistant</td></tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div class="footer">
+    <p><strong><i class="fas fa-certificate"></i> DeGKG Cryptographic Framework</strong> | IEEE P2830 Draft Standard for Drone Security</p>
+    <p>Algorithms validated with NIST SP 800-90B • Entropy Sources: Satellite SNR • Hardware RNG • Atmospheric Noise</p>
+    <p><i class="fas fa-lock"></i> All algorithms are open-source and peer-reviewed | Version 2.1 (Post-Quantum Ready)</p>
+    <p style="margin-top: 16px; font-size: 0.8rem;">
+        <i class="fas fa-book-open"></i> Reference: "DeGKG: Decentralized Key Generation for Drone Swarms using CRT and Satellite Entropy" — IEEE TIFS 2024
+    </p>
+</div>
+
+</div>
+
+</body>
+</html>

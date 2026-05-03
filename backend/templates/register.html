@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Create Account | DeGKG</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+body{
+    height:100vh;
+    background:linear-gradient(120deg,#0f172a,#0ea5e9);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+/* ===== LAYOUT ===== */
+.auth-wrapper{
+    width:1000px;
+    height:650px;
+    display:flex;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 30px 60px rgba(0,0,0,0.3);
+}
+
+/* ===== LEFT IMAGE SIDE ===== */
+.auth-image{
+    flex:1.2;
+    background:url('https://images.unsplash.com/photo-1473968512647-3e447244af8f') center/cover no-repeat;
+    position:relative;
+}
+.auth-image::after{
+    content:'';
+    position:absolute;inset:0;
+    background:rgba(15,23,42,0.65);
+}
+.image-text{
+    position:absolute;
+    bottom:40px;
+    left:40px;
+    color:white;
+    z-index:2;
+}
+.image-text h2{font-size:28px;margin-bottom:10px}
+
+/* ===== RIGHT FORM SIDE ===== */
+.auth-form{
+    flex:1;
+    background:rgba(255,255,255,0.96);
+    padding:50px 45px;
+}
+
+/* ===== HEADINGS ===== */
+.auth-form h2{margin-bottom:6px;color:#0f172a}
+.auth-form p{font-size:14px;margin-bottom:22px;color:#475569}
+
+/* ===== INPUTS ===== */
+.auth-form input{
+    width:100%;
+    padding:14px;
+    margin-bottom:16px;
+    border-radius:8px;
+    border:1px solid #cbd5e1;
+    background:#f1f5f9;
+    font-size:15px;
+}
+.auth-form input:focus{
+    outline:none;
+    border:1px solid #22c55e;
+}
+
+/* ===== PASSWORD INFO ===== */
+.pass-info{
+    font-size:12px;
+    color:#475569;
+    display:block;
+    margin-bottom:10px;
+}
+
+/* ===== SHOW PASS ===== */
+.show-pass{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin:10px 0 20px 0;
+    font-size:14px;
+    white-space:nowrap;
+}
+.show-pass input{
+    width:18px;height:18px;cursor:pointer;
+}
+.show-pass label{cursor:pointer}
+
+/* ===== BUTTON ===== */
+.auth-form button{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:8px;
+    background:#0f766e;
+    color:white;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:0.3s;
+}
+.auth-form button:hover{background:#22c55e}
+
+/* ===== LINKS ===== */
+.link-text{
+    margin-top:18px;
+    font-size:14px;
+}
+.link-text a{
+    color:#0ea5e9;
+    text-decoration:none;
+    font-weight:600;
+}
+
+/* ===== ERROR BOX ===== */
+.error-box{
+    background:#fee2e2;
+    color:#b91c1c;
+    padding:10px;
+    border-radius:6px;
+    margin-bottom:15px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="auth-wrapper">
+
+    <!-- LEFT SIDE IMAGE -->
+    <div class="auth-image">
+        <div class="image-text">
+            <h2>Create Your Secure DeGKG Account</h2>
+            <p>Join the Drone Swarm Encrypted Network</p>
+        </div>
+    </div>
+
+    <!-- RIGHT SIDE FORM -->
+    <div class="auth-form">
+
+        <h2>Create DeGKG Account</h2>
+        <p>Register to access Secure Drone Swarm Dashboard</p>
+
+        {% if error %}
+        <div class="error-box">{{ error }}</div>
+        {% endif %}
+
+        <form method="POST" action="/register" onsubmit="return checkPassword()">
+
+            <input type="text" name="name" placeholder="Full Name" required>
+
+            <input type="email" name="email" placeholder="Email Address" required>
+
+            <input type="password" id="password" name="password" placeholder="Password"
+                   pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@$!%*?&]).{7,}"
+                   title="Must be 7+ characters with uppercase, lowercase, number & special symbol"
+                   required>
+
+            <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm Password" required>
+
+            <small class="pass-info">
+                Password must contain: Uppercase, Lowercase, Number, Special symbol, Min 7 chars
+            </small>
+
+            <div class="show-pass">
+                <input type="checkbox" id="showPass" onclick="togglePassword()">
+                <label for="showPass">Show Password</label>
+            </div>
+
+            <button type="submit">Create Account</button>
+
+        </form>
+
+        <p class="link-text">
+            Already have an account? <a href="/login">Login</a>
+        </p>
+
+    </div>
+
+</div>
+
+<script>
+function togglePassword(){
+    let p=document.getElementById("password");
+    let c=document.getElementById("confirm_password");
+    let t=p.type==="password"?"text":"password";
+    p.type=t;c.type=t;
+}
+
+function checkPassword(){
+    let p=document.getElementById("password").value;
+    let c=document.getElementById("confirm_password").value;
+    if(p!==c){
+        alert("❌ Passwords do not match!");
+        return false;
+    }
+    return true;
+}
+</script>
+
+</body>
+</html>

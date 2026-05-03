@@ -1,0 +1,8 @@
+DeGKG SESSION REPORT
+==================================================
+Session ID: 42
+Drone A: Drone_A
+Drone B: Drone_B
+Encrypted Key: vM2sOujBTJXY26lxn8JE/0bUwTT0/myucS9oxUyYlVmcx58SX3Dtu097EZSMJIT1ndeJAyw54JkXh2H2IP0jfw6p8QhNMOER7RE2slaVEn/yeL/8HpHmXVb8dlUz2uAS
+Timestamp: 2026-01-30T17:19:01.045008
+HMAC: 2719666b8d8bfb9c76d45e6c6f337cf9386e9e199acc525bd2bd19efb8b3bf81
